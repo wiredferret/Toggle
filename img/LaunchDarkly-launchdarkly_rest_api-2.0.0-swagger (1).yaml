@@ -1,0 +1,998 @@
+swagger: '2.0'
+info:
+  title: LaunchDarkly REST API
+  description: Build custom integrations with the LaunchDarkly REST API
+  termsOfService: 'https://launchdarkly.com/terms'
+  contact:
+    name: LaunchDarkly Support
+    url: 'https://support.launchdarkly.com'
+    email: support@launchdarkly.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 2.0.0
+host: app.launchdarkly.com
+basePath: /api/v2
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  Token:
+    type: apiKey
+    name: Authorization
+    in: header
+    description: 'https://app.launchdarkly.com/settings#/tokens'
+security:
+  - Token: []
+paths:
+  /projects:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/projects'
+    get:
+      summary: Returns a list of all projects in the account.
+      operationId: getProjects
+      responses:
+        '200':
+          description: Projects response
+          schema:
+            $ref: '#/definitions/Projects'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - projects
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'post' of path '/projects'
+    post:
+      summary: Create a project
+      operationId: postProject
+      parameters:
+        - $ref: '#/parameters/ProjectPostRequest'
+      responses:
+        '201':
+          $ref: '#/responses/Standard201'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - projects
+  '/projects/{projectKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/projects/{projectKey}'
+    get:
+      summary: Get a project by key.
+      operationId: getProject
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+      responses:
+        '200':
+          description: Project response
+          schema:
+            $ref: '#/definitions/Project'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - projects
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'patch' of path '/projects/{projectKey}'
+    patch:
+      summary: Modify a project by ID
+      operationId: patchProject
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/PatchRequest'
+      responses:
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - projects
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'delete' of path '/projects/{projectKey}'
+    delete:
+      summary: Delete a project by ID
+      operationId: deleteProject
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+      responses:
+        '204':
+          $ref: '#/responses/Standard204'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - projects
+  '/environments/{projectKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'post' of path '/environments/{projectKey}'
+    post:
+      summary: Create an environment
+      operationId: postEnvironment
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentPostRequest'
+      responses:
+        '201':
+          $ref: '#/responses/Standard201'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - environments
+  '/environments/{projectKey}/{environmentKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/environments/{projectKey}/{environmentKey}'
+    get:
+      summary: Get an environment by key.
+      operationId: getEnvironment
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKey'
+      responses:
+        '200':
+          description: Environment response
+          schema:
+            $ref: '#/definitions/Environment'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - environments
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'patch' of path '/environments/{projectKey}/{environmentKey}'
+    patch:
+      summary: Modify an environment by ID
+      operationId: patchEnvironment
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKey'
+        - $ref: '#/parameters/PatchRequest'
+      responses:
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - environments
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'delete' of path '/environments/{projectKey}/{environmentKey}'
+    delete:
+      summary: Delete an environment by ID
+      operationId: deleteEnvironment
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKey'
+      responses:
+        '204':
+          $ref: '#/responses/Standard204'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - environments
+  '/flags/{projectKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/flags/{projectKey}'
+    get:
+      summary: Get a list of all features in the given project.
+      operationId: getFeatureFlags
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKeyQuery'
+        - $ref: '#/parameters/Tag'
+      responses:
+        '200':
+          description: Flags response
+          schema:
+            $ref: '#/definitions/FeatureFlags'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - flags
+  '/flags/{projectKey}/{featureFlagKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/flags/{projectKey}/{featureFlagKey}'
+    get:
+      summary: Get a single feature flag by key.
+      operationId: getFeatureFlag
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/FeatureFlagKey'
+        - $ref: '#/parameters/EnvironmentKeyQuery'
+      responses:
+        '200':
+          description: Flag response
+          schema:
+            $ref: '#/definitions/FeatureFlag'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - flags
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'post' of path '/flags/{projectKey}/{featureFlagKey}'
+    post:
+      summary: Create a feature flag
+      operationId: postFeatureFlag
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/FeatureFlagPostRequest'
+      responses:
+        '201':
+          $ref: '#/responses/Standard201'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - flags
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'patch' of path '/flags/{projectKey}/{featureFlagKey}'
+    patch:
+      summary: Modify a feature flag by ID
+      operationId: patchFeatureFlag
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/FeatureFlagKey'
+        - $ref: '#/parameters/PatchRequest'
+      responses:
+        '200':
+          $ref: '#/responses/FeatureFlags200'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - flags
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'delete' of path '/flags/{projectKey}/{featureFlagKey}'
+    delete:
+      summary: Delete a feature flag by ID
+      operationId: deleteFeatureFlag
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/FeatureFlagKey'
+      responses:
+        '204':
+          $ref: '#/responses/Standard204'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - flags
+  '/flag-statuses/{projectKey}/{environmentKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/flag-statuses/{projectKey}/{environmentKey}'
+    get:
+      summary: Get a list of statuses for all feature flags
+      operationId: getFeatureFlagStatus
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKey'
+      responses:
+        '200':
+          description: List of feature flag statuses
+          schema:
+            $ref: '#/definitions/FeatureFlagStatuses'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - flags
+  '/flag-statuses/{projectKey}/{environmentKey}/{featureFlagKey}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/flag-statuses/{projectKey}/{environmentKey}/{featureFlagKey}'
+    get:
+      summary: Get a list of statuses for all feature flags
+      operationId: getFeatureFlagStatuses
+      parameters:
+        - $ref: '#/parameters/ProjectKey'
+        - $ref: '#/parameters/EnvironmentKey'
+        - $ref: '#/parameters/FeatureFlagKey'
+      responses:
+        '200':
+          description: Feature flag status by flag key
+          schema:
+            $ref: '#/definitions/FeatureFlagStatus'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - flags
+  /auditlog:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/auditlog'
+    get:
+      summary: Fetch a list of all webhooks
+      operationId: getAuditLogEntries
+      responses:
+        '200':
+          description: Audit log entries response
+          schema:
+            $ref: '#/definitions/AuditLogEntries'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - audit log
+  '/auditlog/{resourceId}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/auditlog/{resourceId}'
+    get:
+      summary: Get a webhook by ID
+      operationId: getAuditLogEntry
+      parameters:
+        - $ref: '#/parameters/ResourceId'
+      responses:
+        '200':
+          description: Audit log entry response
+          schema:
+            $ref: '#/definitions/AuditLogEntry'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - audit log
+  /webhooks:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/webhooks'
+    get:
+      summary: Fetch a list of all webhooks
+      operationId: getWebhooks
+      responses:
+        '200':
+          description: Webhooks response
+          schema:
+            $ref: '#/definitions/Webhooks'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - webhooks
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'post' of path '/webhooks'
+    post:
+      summary: Create a webhook
+      operationId: postWebhook
+      parameters:
+        - $ref: '#/parameters/WebhookPostRequest'
+      responses:
+        '201':
+          $ref: '#/responses/Standard201'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - webhooks
+  '/webhooks/{resourceId}':
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/webhooks/{resourceId}'
+    get:
+      summary: Get a webhook by ID
+      operationId: getWebhook
+      parameters:
+        - $ref: '#/parameters/ResourceId'
+      responses:
+        '200':
+          $ref: '#/responses/Webhooks200'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - webhooks
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'patch' of path '/webhooks/{resourceId}'
+    patch:
+      summary: Modify a webhook by ID
+      operationId: patchWebhook
+      parameters:
+        - $ref: '#/parameters/ResourceId'
+        - $ref: '#/parameters/PatchRequest'
+      responses:
+        '200':
+          $ref: '#/responses/Webhooks200'
+        '400':
+          $ref: '#/responses/Standard400'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+        '409':
+          $ref: '#/responses/Standard409'
+      tags:
+        - webhooks
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'delete' of path '/webhooks/{resourceId}'
+    delete:
+      summary: Delete a webhook by ID
+      operationId: deleteWebhook
+      parameters:
+        - $ref: '#/parameters/ResourceId'
+      responses:
+        '204':
+          $ref: '#/responses/Standard204'
+        '401':
+          $ref: '#/responses/Standard401'
+        '404':
+          $ref: '#/responses/Standard404'
+      tags:
+        - webhooks
+  /:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : Operation description must be present and non-empty string]: Field 'description' required in operation 'get' of path '/'
+    get:
+      summary: Get the root resource
+      operationId: getRoot
+      responses:
+        '200':
+          $ref: '#/responses/Root200'
+        '401':
+          $ref: '#/responses/Standard401'
+      tags:
+        - root
+definitions:
+  Link:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      href:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      type:
+        type: string
+  Links:
+    properties:
+      parent:
+        $ref: '#/definitions/Link'
+      self:
+        $ref: '#/definitions/Link'
+  Webhook:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _id:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      url:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      secret:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      'on':
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      tags:
+        type: array
+        items:
+          type: string
+  Webhooks:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/Webhook'
+  FeatureFlag:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      key:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      kind:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      creationDate:
+        type: number
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      includeInSnippet:
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      temporary:
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      maintainerId:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      tags:
+        type: array
+        items:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      variations:
+        type: array
+        items:
+          $ref: '#/definitions/Variation'
+      _links:
+        $ref: '#/definitions/Links'
+      _maintainer:
+        $ref: '#/definitions/Member'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      environments:
+        type: object
+        additionalProperties:
+          $ref: '#/definitions/FeatureFlagConfig'
+  FeatureFlags:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/FeatureFlag'
+  Member:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _id:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      role:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      email:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _pendingInvite:
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      isBeta:
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      customRoles:
+        type: array
+        items:
+          type: string
+  FeatureFlagConfig:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      'on':
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      archived:
+        type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      salt:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      sel:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      lastModified:
+        type: integer
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      version:
+        type: integer
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      targets:
+        type: array
+        items:
+          $ref: '#/definitions/Target'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      rules:
+        type: array
+        items:
+          $ref: '#/definitions/Rule'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      fallthrough:
+        type: object
+        properties:
+          variation:
+            type: integer
+          rollout:
+            $ref: '#/definitions/Rollout'
+  Target:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      values:
+        type: array
+        items:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      variation:
+        type: integer
+  Rule:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      variation:
+        type: integer
+      rollout:
+        $ref: '#/definitions/Rollout'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      clauses:
+        type: array
+        items:
+          $ref: '#/definitions/Clause'
+  Rollout:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      variations:
+        type: array
+        items:
+          $ref: '#/definitions/WeightedVariation'
+  WeightedVariation:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      variation:
+        type: integer
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      weight:
+        type: integer
+  Clause:
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      attribute:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      op:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      values:
+        type: array
+        items:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      negate:
+        type: boolean
+  Variation:
+    required:
+      - value
+    properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      description:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      value:
+        type: object
+  FeatureFlagStatus:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      lastRequested:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      default:
+        type: boolean
+  FeatureFlagStatuses:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/FeatureFlagStatus'
+  Project:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/Environment'
+  Projects:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _id:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      key:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/Project'
+  Environment:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _id:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      key:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      apiKey:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      mobileKey:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      color:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      defaultTtl:
+        type: number
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      secureMode:
+        type: boolean
+  Environments:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/Environment'
+  AuditLogEntry:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      _id:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      date:
+        type: number
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      accesses:
+        type: object
+        properties:
+          action:
+            type: string
+          resource:
+            type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      kind:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      name:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      description:
+        type: string
+      member:
+        $ref: '#/definitions/Member'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      titleVerb:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      title:
+        type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      target:
+        type: object
+        properties:
+          _links:
+            $ref: '#/definitions/Links'
+          name:
+            type: string
+          resources:
+            type: array
+            items:
+              type: string
+  AuditLogEntries:
+    properties:
+      _links:
+        $ref: '#/definitions/Links'
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+      items:
+        type: array
+        items:
+          $ref: '#/definitions/AuditLogEntry'
+responses:
+  Standard201:
+    description: Resource created
+  Standard204:
+    description: Action completed successfully
+  Standard400:
+    description: Invalid request body
+  Standard401:
+    description: Invalid access token
+  Standard404:
+    description: Invalid resource specifier
+  Standard409:
+    description: Status conflict
+  Root200:
+    description: A list of links to available resources in the API
+    schema:
+      $ref: '#/definitions/Links'
+  Webhooks200:
+    description: Webhook response
+    schema:
+      $ref: '#/definitions/Webhook'
+  FeatureFlags200:
+    description: Feature flag response
+    schema:
+      $ref: '#/definitions/FeatureFlag'
+  Projects200:
+    description: Project response
+    schema:
+      $ref: '#/definitions/Project'
+parameters:
+  ResourceId:
+    name: resourceId
+    in: path
+    required: true
+    description: The resource ID
+    type: string
+  WebhookPostRequest:
+    name: webhookBody
+    in: body
+    required: true
+    description: New webhook
+    schema:
+      properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        url:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        secret:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        sign:
+          type: boolean
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        'on':
+          type: boolean
+      required:
+        - url
+        - sign
+        - 'on'
+  FeatureFlagPostRequest:
+    name: featureFlagBody
+    in: body
+    required: true
+    description: New feature flag
+    schema:
+      properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        name:
+          type: string
+          description: A human-friendly name for the feature flag
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        key:
+          type: string
+          description: A unique key that will be used to reference the flag in your code
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        variations:
+          type: array
+          items:
+            $ref: '#/definitions/Variation'
+          description: An array of possible variations for the flag.
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        temporary:
+          type: boolean
+          description: Whether or not the flag is a temporary flag
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        tags:
+          type: array
+          items:
+            type: string
+          description: Tags for the feature flag
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        includeInSnippet:
+          type: boolean
+          description: >-
+            Whether or not this flag should be made available to the client-side
+            JavaScript SDK
+      required:
+        - name
+        - key
+        - variations
+  ProjectPostRequest:
+    name: projectBody
+    in: body
+    required: true
+    description: New project
+    schema:
+      properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        name:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        key:
+          type: string
+      required:
+        - name
+        - key
+  EnvironmentPostRequest:
+    name: environmentBody
+    in: body
+    required: true
+    description: New environment
+    schema:
+      properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        name:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        key:
+          type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        color:
+          type: string
+          description: >-
+            A color swatch (as an RGB hex value with no leading '#', e.g.
+            C8C8C8)
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+        defaultTtl:
+          type: number
+      required:
+        - name
+        - key
+        - color
+  ProjectKey:
+    name: projectKey
+    in: path
+    required: true
+    description: The project key
+    type: string
+  EnvironmentKey:
+    name: environmentKey
+    in: path
+    required: true
+    description: The environment key
+    type: string
+  EnvironmentKeyQuery:
+    name: environmentKeyQuery
+    in: query
+    required: false
+    description: The environment key
+    type: string
+  FeatureFlagKey:
+    name: featureFlagKey
+    in: path
+    required: true
+    description: The feature flag's key
+    type: string
+  Tag:
+    name: tag
+    in: query
+    required: false
+    description: Filter by tag
+    type: string
+  PatchRequest:
+    name: patchDelta
+    in: body
+    required: true
+    description: 'http://jsonpatch.com/'
+    schema:
+      items:
+        properties:
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+          op:
+            type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+          path:
+            type: string
+# [Style Validator (f919f75c-6460-4d41-b0fd-b0f5078e67ec) : All model properties must have examples]: Field 'example' required in 'properties'
+          value:
+            type: object
+        required:
+          - op
+          - path
+          - value
