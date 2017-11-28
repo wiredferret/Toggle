@@ -1,0 +1,1940 @@
+<tw-storydata name="Choose Your Own Deploy" startnode="1" creator="Twine" creator-version="2.1.3" ifid="703A82F4-A86B-4963-AB0D-1B88A110A796" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
+	font-family: helvetica, sans-serif;
+	font-size: 150%;
+	background-color: #152035; 
+	background-image: url("http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Snapchat-1169088022-1.jpg");
+	background-size: cover;
+	color: #FFFFFF;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.enchantment-link, tw-link {
+	color: #33ccff;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #33ccff;
+}
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="Toggle" position="325,25">In the beginning, there was darkness.
+
+[[Launch Time]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="2" name="Launch Time" tags="Toggle" position="600,50">This is Toggle.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191226.jpg&quot; width=500&gt;
+
+Toggle is a space explorer and spacelane maintainer. Their job is to go to new parts of space and plant spacelane flags so that the home office can create safe, efficient spacelanes.
+
+Pack everything Toggle needs for a trip!
+[[Rocket fuel]]
+[[Spacelane flags]]
+[[Tunes]]
+[[Crew]]
+
+[[All packed!|Adventure choices]]</tw-passagedata><tw-passagedata pid="3" name="Adventure choices" tags="" position="600,200">Hey, audience! Let&#x27;s choose our adventure. You can&#x27;t all vote, because it would take forever, so I&#x27;m just going to point at someone making eye contact with me, and they can make a choice.
+
+(text-style:&quot;rumble&quot;)[Where shall we go?]
+
+* [[Development]]
+* [[Design]]
+* [[O(o)ps|O(o)ps]]
+* [[Sales and Marketing]]
+* [[User fun]]
+* [[Deployment]]
+* [[Case study]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190630.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="53,473">You are a developer deploying, but not always for external audiences. You might want to turn on features in these ways:
+
+[[Internal testing]]
+[[Dogfood]]
+[[Visibility]]
+[[Merging]]
+
+[[Back to Adventure Choices|Adventure choices]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=500&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="326,456">Feature management is easy for everyone! What if your design team would like a chance to test some of the changes that they&#x27;ve been making to the interface?
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Toggle_launching.jpg&quot; width=600&gt;
+
+[[A/B testing]]
+[[Accessibility]]
+[[White-labeling]]
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="6" name="O(o)ps" tags="Oops" position="550,450">We all know that the operations part of DevOps is full of people who care passionately about uptime, solid delivery, and security. They want a hand in feature management and a way to make sure they can turn things off in a hurry.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192012.jpg&quot; width=500&gt;
+
+[[Failover]]
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="7" name="Sales and Marketing" tags="Sales" position="750,450">Our products aren&#x27;t very successful if we can&#x27;t get people to want them and use them. For that we need marketing people to explain why our product is awesome, and sales people to find the people who need our solutions. These teams also need to be able to configure some parts of your product without a lot of fuss.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191941.jpg&quot; width=500&gt;
+
+[[This or that?|A/B testing]]
+[[Currency]]
+[[Market segments]]
+[[Feature tiers]]
+[[Tutorials]]</tw-passagedata><tw-passagedata pid="8" name="User fun" tags="User Design" position="950,456">If there were no space travelers, Toggle wouldn&#x27;t have a job. But different travelers care about different things. Some of them want to get where they&#x27;re going as fast as possible, and some want to route around black-hole turbulence. Some travelers want to see as many planets as they can. 
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191542.jpg&quot; width=&quot;500&quot;&gt;
+
+Whatever their goal, we want to make sure the users, and the travelers, get the experience they are hoping for.
+
+[[User colors]]
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="9" name="Deployment" tags="Deployment" position="1160,466">Deployment is not the same thing as activation.
+
+Toggle deploys spacelane flags on moons and planets.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=500&gt;
+
+But until the signal is sent to activate them, they are dark and silent, waiting.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+[[Internal testing]]</tw-passagedata><tw-passagedata pid="10" name="User colors" tags="User" position="953,635">(enchant: ?Page, (background: &quot;none&quot;))
+(background: #ff00ff)[Users have a lot of feelings about their interfaces.]
+(text-colour: white)[Some of us need high-contrast text to read.]
+(css: &quot;font-size: 200%&quot;)[Some of us need larger text.]
+
+You can use feature flags and feature management to offer your users a high-contrast version of your site. Or one that looks like a hot dog stand.
+
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choice|Adventure choices]]</tw-passagedata><tw-passagedata pid="11" name="Accessibility" tags="User Design" position="955,820">Accessibility can include colors, but it can also mean offering users interfaces designed for tabbed or touch interfaces, interfaces that don&#x27;t download images for slow connections, or even interfaces that are automatically dimmed at night.
+
+[[User colors]]
+[[SSO customization]]
+
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="12" name="Internal testing" tags="Deployment Development" position="1161,636">Before you send someone out into deep space, you have them spend some time tooling around the solar system.
+
+In the same way, you may want to test a product internally before you show it to the outside world. Use a feature toggle to turn it on only for the people who are logged in from your company IP addresses.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Dogfood]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="13" name="Canary launch" tags="Deployment" position="1165,816">Any spaceperson will tell you that you don&#x27;t have to turn your rockets all the way on or all the way off to get where you&#x27;re going. Steady, constant acceleration will do the trick and leave you more room for emergency manuevering.
+
+When we launch a product, we can start by showing it just to the people who signed up as beta testers, or just to 10% of our user base. That gives us some time to make sure there aren&#x27;t any unexpected effects at a larger scale, and that our infrastructure is up to the load. We can gradually increase the roll-out.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Internal testing]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="14" name="Albatross launch" tags="Deployment" position="1166,996">Not everyone is excited about the amazing new features you&#x27;ve added. In fact, some people are really resistant to change, because they&#x27;ve built a whole infrastructure around the way it used to be.
+
+Rather than force them to upgrade, you can create a non-upgrading group, and leave them out of all the new stuff so they can keep doing their custom things.
+
+[[Internal testing]]
+[[Canary launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="15" name="Market segments" tags="Deployment Sales-and-marketing" position="1166,1156">Your feature may be banned in some countries. Or you may need to use a different method of data collection. What if you need to comply with COPPA, to track how children use your site?
+
+Your deployment can have room for all these variables in the same codebase, if you take the time to design your features to be able to operate independently as they are switched on and off.
+
+Think of your features like microservices - nothing is going to need to call all of them except a test harness.
+
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Sales and Marketing|Sales and Marketing]]</tw-passagedata><tw-passagedata pid="16" name="Kill switch" tags="Deployment Oops" position="1175,1315">aOOOga! aOOga!
+
+Something has gone very wrong with a feature, and you need to get it out of production fast!
+
+How fast does the kill switch work?
+
+Literally (the literal literally), faster than you can say &quot;Kill that feature&quot;.
+
+If there&#x27;s one thing Toggle appreciates, it&#x27;s swift emergency response.
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+
+[[Back to Deployment|Deployment]]
+[[Back to O(o)ps|O(o)ps]]</tw-passagedata><tw-passagedata pid="17" name="Dogfood" tags="Development" position="48,650">Toggle hopes they don&#x27;t have to eat dogfood on their mission! But developers have made a joke about this - their dogfood (code) is so delicious that they would eat it like human food. 
+
+[[Visibility]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure Choices|Adventure choices]]
+</tw-passagedata><tw-passagedata pid="18" name="Visibility" tags="Development" position="50,835">Developers want to be able to see their changes to test them, but they may not be ready for everyone to see them.
+
+[[Dogfood]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="19" name="Merging" tags="Development" position="50,1000">Sometimes it&#x27;s hard keep a bunch of branches straight in space-time. That&#x27;s why Toggle wishes that everyone used the same spacelane, but they don&#x27;t always get their way.
+
+[[Visibility]]
+[[Adventure choices]]
+</tw-passagedata><tw-passagedata pid="20" name="Currency" tags="Sales User" position="748,641">How do you want to get paid? Toggle gets paid in bars of gold-pressed latinum, but you may want to switch your prices from US dollars to Canadian dolllars, or yen or pesos or euros. 
+
+The user&#x27;s browser probably already knows where they are, so we just need to send them the price in the correct currency.
+
+[[Feature tiers]]
+[[Tutorials]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="21" name="Feature tiers" tags="Sales" position="745,816">You get what you pay for.
+
+Super-luxury spaceliners are fast and comfortable, but they cost a lot to fly on. Toggle knows that if you&#x27;re willing to fly in a smaller cabin, you can save a lot of gold-pressed latinum. It&#x27;s the same spaceliner, but different experiences.
+
+Sometimes we want our users to have different experiences, depending on what they paid for.
+
+[[Currency]]
+[[Tutorials]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Tutorials" tags="Sales User" position="751,1000">It&#x27;s helpful to have a tutorial the first time or two you use a product, but you don&#x27;t want it popping up Every. Single. Time. Use a feature flag to let users opt out of tutorials when they&#x27;re done.
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="23" name="Failover" tags="Oops" position="546,641">Whether you&#x27;re live in production or on your own in trackless space, sometimes you need to switch from something that isn&#x27;t working to your backup. 
+
+You have a backup, right?
+
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="24" name="Deployment failure" tags="Oops" position="545,821">Sometimes things go wrong, and we usually reach for the roll-back in that case. If we just put everything back the way it was, it should work again.
+
+But what if instead of rolling back, you could roll foward? Keep all the good parts of the deploy, and just turn off the one feature that is failing, rather than everything?
+
+[[Kill switch]]
+[[Failover]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="25" name="Rocket fuel" tags="Toggle" position="750,50">You&#x27;re going to need some rocket fuel to get going. Have you loaded it carefully? You don&#x27;t want the elements to cross over or mix too early.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/dietcoke_and_mentos.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="26" name="Spacelane flags" tags="Toggle" position="1051,50">Spacelane flags or markers are like those old-fashioned railroad switches. Toggle plants the markers on moons, planets, and asteroids to help guide space traffic along the fastest or safest routes.
+
+Once Toggle has planted the markers, they can be changed from back in the home office without anyone being close to them, but Toggle needs to put them in place.
+
+Toggle&#x27;s spacelane markers look like this:
+&lt;img src=&quot;https://civilianmilitaryintelligencegroup.com/wp-content/uploads/2013/09/heliograph1.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="27" name="Tunes" tags="Toggle" position="900,45">No space adventure is complete without a playlist. Toggle likes these:
+
+&lt;iframe src=&quot;http://8tracks.com/mixes/8706314/player_v3_universal&quot; width=&quot;300&quot; height=&quot;250&quot; style=&quot;border: 0px none;&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;_8t_embed_p&quot; style=&quot;font-size: 11px; line-height: 12px;&quot;&gt;&lt;a href=&quot;http://8tracks.com/wiredferret/toggle-s-tunes?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;Toggle&amp;#39;s Tunes&lt;/a&gt; from &lt;a href=&quot;http://8tracks.com/wiredferret?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;wiredferret&lt;/a&gt; on &lt;a href=&quot;http://8tracks.com?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;8tracks Radio&lt;/a&gt;.&lt;/p&gt;
+
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="28" name="Crew" tags="Toggle" position="1210,51">Toggle frequently travels alone, but even then, they have their support crew back home. Here are the people who help Toggle get their job done.
+
+[[Keep packing|Launch Time]]
+[[Swag]]</tw-passagedata><tw-passagedata pid="29" name="White-labeling" tags="Design" position="321,831">Sometimes a client wants your product to look like they&#x27;ve made it. They want their branding and vocabulary to show up so the users have a consistent experience.
+
+We can use feature flags to switch from our branding to the customer&#x27;s branding without having to have an entirely different branch that may get out of sync.
+
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="30" name="Custom documentation" tags="Design" position="325,650">Some people want only the documentation that fits with their product. Some people want to read about everything that they could buy. With feature management, the features you deliver may be more than your application - documentation, training, [[tutorials|Tutorials]], even chatops. You choose!
+
+[[Disguises|White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="31" name="Case study" tags="Case-study" position="1920,296">Let&#x27;s talk about how a hypothetical spaceline company added feature management. 
+
+Which do you think they chose to start with?
+
+[[Terraforming|Retrofit]]
+[[Unexplored planets|New feature]]
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190659-1-1.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="32" name="New feature" tags="case" position="1606,458">It&#x27;s a brand-new, unexplored section of the multiverse. Spacelanes, Inc, can do anything they want while they build their product as fast as possible. Which way did they go?
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190727.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Git and branches]]
+[[Flags and mainline]]</tw-passagedata><tw-passagedata pid="33" name="Retrofit" tags="" position="2223,458">It would be great if this sector could start from scratch, but they already have a bunch of spacelanes in place, so they need to develop around them without inconveniencing traffic.
+
+Engineering holds a meeting on Hoth, so that everyone is encouraged to work together on the problem. There are three main proposals. Which do you vote for?
+
+[[Slow and steady]]
+[[Only new features]]
+[[Rip off the bandaid]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="34" name="Git and branches" tags="" position="1423,635">Awesome! Spacelanes, Inc. is going to go with the safe and reliable method their engineers have used for years. They know it works, and this time will be no different.
+
+[[Planet 1|Goes fine]]
+[[Planet 2|Merge conflict]]
+[[Planet 3|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="35" name="Flags and mainline" tags="" position="1780,631">The new CTO at Spacelanes, Inc. is committed to Continuous Deployment and Integration. They want to be able to deploy dozens of times a day and turn features on and off when they&#x27;re ready. 
+
+Since this part of the galaxy is starting from scratch, they have decided to use mainline and flag development. Everyone is working in exactly the same code base and can see where everyone else is putting their spacelane plans in real time.
+
+[[Planet Up|Deploy darkly]]
+[[Planet Charmed|Feature failed fast]]
+[[Planet Gluon|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="36" name="Goes fine" tags="" position="1431,1148">Congratulations!
+
+You&#x27;ve successfully used branching development to create and release the routes for Spacelanes, Inc.
+
+Ready for your next assignment?
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="37" name="Merge conflict" tags="" position="1423,818">Well, that&#x27;s embarassing! While one of the engineers was building a spacelane, one of their co-workers built a spacelane right across it! Something is going to have to change or get reconciled, or the spaceships will run into each other.
+
+But at least nothing&#x27;s really lost, just...conflicted. I&#x27;m sure we can cherry-pick that. 
+
+Try again?
+[[Left planet|Goes fine]]
+[[Right planet|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="38" name="Git trauma therapist required" tags="" position="1428,993">Technically, we call that a /splinch/. No one is quite sure how we will get the ships pried apart when they&#x27;re smooshed together like that. It looks like we&#x27;re going to have to back up a long ways, and several people are going to have to abandon their work. No data was lost, but it will take longer to fix it than it would to re-do it.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/img_0830.jpg&quot; width=500&quot;&gt;
+
+Try again?
+[[Top planet|Goes fine]]
+[[Strange planet|Merge conflict]]</tw-passagedata><tw-passagedata pid="39" name="Deploy darkly" tags="" position="1785,790">Each team works on their spacelane plan in the same place. Since they&#x27;re doing acceptance and integration tests automatically several times a day, they never go too far down a path that conflicts with another team.
+
+After several weeks of work, a team finishes their sprint by sending Toggle or someone like them to test that the spacelane works, before they send everyone down it. Only Toggle&#x27;s ship can see the markers - they&#x27;re invisible to regular traffic. When the team is satisfied that the route is safe and stable, they turn on the markers so everyone can use the route.
+
+Congratulations, team!
+
+Ready for your next assignment?
+[[Case study]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="40" name="Feature failed fast" tags="" position="1780,986">Zaphod has been working on his new spacelane route since the morning float-up meeting. He thinks it will be pretty good, so he runs the test to confirm his plan.
+
+Oops! He can see right away that it will conflict with the spacelane Leeloo is building in the same area. Zaphod changes the parameters of his lane so that they won&#x27;t run into each other. Good thing he could see where she was planning to be!
+
+Try again?
+[[Planet Muon|Deploy darkly]]
+[[Planet Eta Ceta|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="41" name="Slow your roll....out" tags="" position="1775,1141">Telzey&#x27;s route is looking great! There are no conflicts, it&#x27;s passing all the tests, and Toggle says it&#x27;s faster than the current route. 
+
+Telzey switches on her markers and the traffic *surges* through. It&#x27;s wonderful...except it isn&#x27;t. There isn&#x27;t enough provisioning along this route for the amount of traffic trying to take it. Before the route can support this level of traffic, Spacelanes needs to build some more infrastructure.
+
+To reduce the congestion, Telzey dials back the markers so that they only appear to every other ship. The route can handle half the traffic while Spacelanes gets the support systems in place for full traffic. 
+
+Try again?
+[[Planet Erehwon|Feature failed fast]]
+[[Planet Ruritania|Deploy darkly]]</tw-passagedata><tw-passagedata pid="42" name="Slow and steady" tags="" position="2003,636">Everyone has a quota of spacelane markers that they are supposed to convert to the new remote-switchable style. It will take time, but if everyone plugs away at their own zone, it will all get done...eventually.
+
+However, [[training is hard|Training is hard]]. It takes a long time to get people to take the conversion training, and once they do, they get distracted by current maintenance and don&#x27;t end up doing as many conversions as anyone hoped. Still, it is forward progress.
+
+[[Works great]]</tw-passagedata><tw-passagedata pid="43" name="Only new features" tags="" position="2246,635">We&#x27;re not going to try to refactor or retrofit any of the old spacelanes. Instead, we&#x27;re just going to try this new switchable marker on all of the new spacelanes we build. 
+
+It&#x27;s going to be a pain to have a split codebase, but it seems better than trying to do all the old work and the new work at the same time.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="44" name="Rip off the bandaid" tags="" position="2475,630">New spaceliners can&#x27;t use the old and new style markers at the same time. We&#x27;re going to have to convert every single marker out there if we want to retain the new and incoming traffic.
+
+This will be an all-hands-on-deck push, but when it&#x27;s over, we&#x27;ll be able to switch and control any spacelane from back in the office, and that will save a bunch of time and money. If only we can get through this next part.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="45" name="Training is hard" tags="" position="2078,903">It&#x27;s really hard to change the way you understand the universe. Teaching people to change the way they work requires everyone to make a conscious effort, and it means that people who used to be really fast at their job are a bit slower. But new things are always worth learning. In the end, the team can be proud of what they accomplished.
+
+[[Works great]]
+</tw-passagedata><tw-passagedata pid="46" name="Works great" tags="" position="2348,903">Toggle loves everyone in this space cantina! Because of the new-style markers, they only have to mark a planet once, and then multiple routes can use it, instead of having to leave multiple almost-identical markers. The automated switching means that Toggle has less manual labor to do, and can spend more time on their mycology experiments. 
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192030-4.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="47" name="A/B testing" tags="" position="323,1005">Sometimes you want to see if users like A or B better. Which makes them happier? You can use feature management to split a test group or all of your customers, into groups that see different designs.
+
+[[Design]]
+[[Custom documentation]]
+[[White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="48" name="SSO customization" tags="User-fun" position="951,995">When Toggle signs into a spaceship, they expect the spaceship to remember their name and preferences. The same can be true for your users. Once we have the user&#x27;s identifier, why not give them all the settings that they would prefer to use right away?
+
+[[User colors]]
+[[Accessibility]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="49" name="Swag" tags="" position="1210,201">Just like Toggle, I have a team that makes navigating deployment and release much faster and safer. We provide feature flags as a service, and if you&#x27;d like to know more about that, you can visit:
+
+&#x27;&#x27;go.launchdarkly.com/agilemw&#x27;&#x27; 
+
+They&#x27;ll be happy to send you a free t-shirt and some stickers of Toggle.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/LaunchDarklyBayBridge.jpeg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="50" name="footer" tags="footer" position="2460,1250">
+(css: &quot;font-size: 50%;&quot;)[@wiredferret | Agile Midwest 2017 | Heidi Waterhouse | LaunchDarkly]</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Choose Your Own Deploy" startnode="1" creator="Twine" creator-version="2.1.3" ifid="703A82F4-A86B-4963-AB0D-1B88A110A796" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
+	font-family: "Arial";
+	background-color: #152035; 
+	background-image: url("http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Snapchat-1169088022-1.jpg");
+	background-size: cover;
+	color: #FFFFFF;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.enchantment-link, tw-link {
+	color: #33ccff;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #33ccff;
+}
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="Toggle" position="325,25">In the beginning, there was darkness
+
+[[Launch Time]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="2" name="Launch Time" tags="Toggle" position="600,50">Pack everything you need for a trip!
+[[Rocket fuel]]
+[[Spacelane flags]]
+[[Tunes]]
+[[Crew]]
+
+[[All packed!|Adventure choices]]</tw-passagedata><tw-passagedata pid="3" name="Adventure choices" tags="" position="600,200">Hey, audience! Let&#x27;s choose our adventure. You can&#x27;t all vote, because it would take forever, so I&#x27;m just going to point at someone making eye contact with me, and they can make a choice.
+
+(text-style:&quot;rumble&quot;)[Where shall we go?]
+
+* [[Development]]
+* [[Design]]
+* [[O(o)ps|O(o)ps]]
+* [[Sales and Marketing]]
+* [[User fun]]
+* [[Localization]]
+* [[Deployment]]
+* [[Case study]]
+</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="53,473">You are a developer deploying, but not always for external audiences. You might want to turn on features in these ways:
+
+[[Internal testing]]
+[[Dogfood]]
+[[Visibility]]
+[[Merging]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="326,456">Feature management is easy for everyone! What if your design team would like a chance to test some of the changes that they&#x27;ve been making to the interface?
+
+[[A/B testing]]
+[[Accessibility]]
+[[White-labeling]]
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="6" name="O(o)ps" tags="Oops" position="550,450">We all know that the operations part of DevOps is full of people who care passionately about uptime, solid delivery, and security. They want a hand in feature management and a way to make sure they can turn things off in a hurry.
+
+[[Failover]]
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="7" name="Sales and Marketing" tags="Sales" position="750,450">Our products aren&#x27;t very successful if we can&#x27;t get people to want them and use them. For that we need marketing people to explain why our product is awesome, and sales people to find the people who need our solutions. These teams also need to be able to configure some parts of your product without a lot of fuss.
+
+[[This or that?|A/B testing]]
+[[Currency]]
+[[Market segments]]
+[[Feature tiers]]
+[[Tutorials]]</tw-passagedata><tw-passagedata pid="8" name="User fun" tags="User Design" position="950,456">If there were no space travelers, Toggle wouldn&#x27;t have a job. But different travelers care about different things. Some of them want to get where they&#x27;re going as fast as possible, and some want to route around black-hole turbulence. Some travelers want to see as many planets as they can. 
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191542.jpg&quot; width=&quot;500&quot;&gt;
+
+Whatever their goal, we want to make sure the users, and the travelers, get the experience they are hoping for.
+
+[[User colors]]
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="9" name="Deployment" tags="Deployment" position="1160,466">Deployment is not the same thing as activation.
+
+Toggle deploys spacelane flags on moons and planets.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; size=&quot;500 px&quot;&gt;
+
+But until the signal is sent to activate them, they are dark and silent, waiting.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+[[Internal testing]]</tw-passagedata><tw-passagedata pid="10" name="User colors" tags="User" position="953,635">(enchant: ?Page, (background: &quot;none&quot;))
+(background: #ff00ff)[Users have a lot of feelings about their interfaces.]
+(text-colour: white)[Some of us need high-contrast text to read.]
+(css: &quot;font-size: 200%&quot;)[Some of us need larger text.]
+
+You can use feature flags and feature management to offer your users a high-contrast version of your site. Or one that looks like a hot dog stand.
+
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choice|Adventure choices]]</tw-passagedata><tw-passagedata pid="11" name="Accessibility" tags="User Design" position="955,820">Accessibility can include colors, but it can also mean offering users interfaces designed for tabbed or touch interfaces, interfaces that don&#x27;t download images for slow connections, or even interfaces that are automatically dimmed at night.
+
+[[User colors]]
+[[SSO customization]]
+
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="12" name="Internal testing" tags="Deployment Development" position="1160,643">Before you send someone out into deep space, you have them spend some time tooling around the solar system.
+
+In the same way, you may want to test a product internally before you show it to the outside world. Use a feature toggle to turn it on only for the people who are logged in from your company IP addresses.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Dogfood]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="13" name="Canary launch" tags="Deployment" position="1166,823">Any spaceperson will tell you that you don&#x27;t have to turn your rockets all the way on or all the way off to get where you&#x27;re going. Steady, constant acceleration will do the trick and leave you more room for emergency manuevering.
+
+When we launch a product, we can start by showing it just to the people who signed up as beta testers, or just to 10% of our user base. That gives us some time to make sure there aren&#x27;t any unexpected effects at a larger scale, and that our infrastructure is up to the load. We can gradually increase the roll-out.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Internal testing]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="14" name="Albatross launch" tags="Deployment" position="1166,996">
+
+[[Internal testing]]
+[[Canary launch]]
+[[Market segments]]
+[[Kill switch]]</tw-passagedata><tw-passagedata pid="15" name="Market segments" tags="Deployment" position="1350,975">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="Kill switch" tags="Deployment Oops" position="1350,1100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="Dogfood" tags="Development" position="48,650">Toggle hopes they don&#x27;t have to eat dogfood on their mission! But developers have made a joke about this - their dogfood (code) is so delicious that they would eat it like human food. 
+
+[[Visibility]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure Choices|Adventure choices]]
+</tw-passagedata><tw-passagedata pid="18" name="Visibility" tags="Development" position="50,835">Developers want to be able to see their changes to test them, but they may not be ready for everyone to see them.
+
+[[Dogfood]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="19" name="Merging" tags="Development" position="50,1000">Sometimes it&#x27;s hard keep a bunch of branches straight in space-time. That&#x27;s why Toggle wishes that everyone used the same spacelane, but they don&#x27;t always get their way.
+
+[[Visibility]]
+[[Adventure choices]]
+</tw-passagedata><tw-passagedata pid="20" name="Currency" tags="Sales User" position="748,641">How do you want to get paid? Toggle gets paid in bars of gold-pressed latinum, but you may want to switch your prices from US dollars to Canadian dolllars, or yen or pesos or euros. 
+
+The user&#x27;s browser probably already knows where they are, so we just need to send them the price in the correct currency.
+
+[[Feature tiers]]
+[[Tutorials]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="21" name="Feature tiers" tags="Sales" position="745,816">You get what you pay for.
+
+Super-luxury spaceliners are fast and comfortable, but they cost a lot to fly on. Toggle knows that if you&#x27;re willing to fly in a smaller cabin, you can save a lot of gold-pressed latinum. It&#x27;s the same spaceliner, but different experiences.
+
+Sometimes we want our users to have different experiences, depending on what they paid for.
+
+[[Currency]]
+[[Tutorials]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Tutorials" tags="Sales User" position="751,1000">It&#x27;s helpful to have a tutorial the first time or two you use a product, but you don&#x27;t want it popping up Every. Single. Time. Use a feature flag to let users opt out of tutorials when they&#x27;re done.
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="23" name="Failover" tags="Oops" position="546,641">Whether you&#x27;re live in production or on your own in trackless space, sometimes you need to switch from something that isn&#x27;t working to your backup. 
+
+You have a backup, right?
+
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="24" name="Deployment failure" tags="Oops" position="545,821">Sometimes things go wrong, and we usually reach for the roll-back in that case. If we just put everything back the way it was, it should work again.
+
+But what if instead of rolling back, you could roll foward? Keep all the good parts of the deploy, and just turn off the one feature that is failing, rather than everything?
+
+[[Kill switch]]
+[[Failover]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="25" name="Rocket fuel" tags="Toggle" position="750,50">You&#x27;re going to need some rocket fuel to get going. Have you loaded it carefully?
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="26" name="Spacelane flags" tags="Toggle" position="1050,50">Spacelane flags are like those old-fashioned railroad switches. Toggle plants the flags on moons, planets, and asteroids to help guide space traffic along the fastest or safest routes.
+
+Once Toggle has planted the flags, they can be changed from back in the home office without anyone being close to them, but Toggle needs to put them in place.
+
+Toggle&#x27;s spacelane flags look like this:
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="27" name="Tunes" tags="Toggle" position="900,50">No space adventure is complete without a playlist. Toggle likes these:
+
+&lt;8track playlist&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="28" name="Crew" tags="Toggle" position="1175,25">Toggle frequently travels alone, but even then, they have their support crew back home. Here are the people who help Toggle get their job done.
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="29" name="White-labeling" tags="Design" position="321,831">Sometimes a client wants your product to look like they&#x27;ve made it. They want their branding and vocabulary to show up so the users have a consistent experience.
+
+We can use feature flags to switch from our branding to the customer&#x27;s branding without having to have an entirely different branch that may get out of sync.
+
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="30" name="Custom documentation" tags="Design" position="325,650">Some people want only the documentation that fits with their product. Some people want to read about everything that they could buy. With feature management, the features you deliver may be more than your application - documentation, training, [[tutorials|Tutorials]], even chatops. You choose!
+
+[[Disguises|White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="31" name="Case study" tags="" position="1675,325">[[New feature]]
+[[Terraforming|Retrofit]]
+[[Unexplored planets|New feature]]</tw-passagedata><tw-passagedata pid="32" name="New feature" tags="case" position="1800,475">[[Git and branches]]
+[[Flags and mainline]]</tw-passagedata><tw-passagedata pid="33" name="Retrofit" tags="" position="2200,375">[[Slow and steady]]
+[[Only new features]]
+[[Rip off the bandaid]]
+
+(Random)</tw-passagedata><tw-passagedata pid="34" name="Git and branches" tags="" position="1650,625">[[Goes fine]]
+[[Merge conflict]]
+[[Git trauma therapist required]]
+
+(Random)</tw-passagedata><tw-passagedata pid="35" name="Flags and mainline" tags="" position="1875,625">[[Deploy darkly]]
+[[Feature failed fast]]
+[[Slow your roll....out]]
+
+(Random)</tw-passagedata><tw-passagedata pid="36" name="Goes fine" tags="" position="1625,1025">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Merge conflict" tags="" position="1650,775">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="Git trauma therapist required" tags="" position="1625,900">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Deploy darkly" tags="" position="1850,775">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Feature failed fast" tags="" position="1850,900">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Slow your roll....out" tags="" position="1850,1050">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Slow and steady" tags="" position="2050,525">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Only new features" tags="" position="2250,550">[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="44" name="Rip off the bandaid" tags="" position="2450,550">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Training is hard" tags="" position="2125,725">[[Slow and steady]]
+</tw-passagedata><tw-passagedata pid="46" name="Works great" tags="" position="2325,725">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="A/B testing" tags="" position="323,1005">Sometimes you want to see if users like A or B better. Which makes them happier? You can use feature management to split a test group or all of your customers, into groups that see different designs.
+
+[[Design]]
+[[Custom documentation]]
+[[White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="48" name="Localization" tags="" position="1500,475">The web is a planet without boundaries, but that doesn&#x27;t mean it doesn&#x27;t have languages that we need to respect. Browsers can do some level of localization, but you need to build your application so your users can use features in their language.
+
+[[Currency]]
+[[Programming language]]
+[[Human language]]</tw-passagedata><tw-passagedata pid="49" name="Programming language" tags="" position="1500,775">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Human language" tags="" position="1500,625">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="SSO customization" tags="User-fun" position="951,995">When Toggle signs into a spaceship, they expect the spaceship to remember their name and preferences. The same can be true for your users. Once we have the user&#x27;s identifier, why not give them all the settings that they would prefer to use right away?
+
+[[User colors]]
+[[Accessibility]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Choose Your Own Deploy Nodevember" startnode="1" creator="Twine" creator-version="2.1.3" ifid="8D1F1E27-9703-4EA8-8A80-691C147B1874" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Franklin+Libre');
+@import url('http://i68.tinypic.com/209mv54.jpg');
+  
+body, tw-story {
+	
+  	font-family: Nunito, san-serif;
+  	font-size: 150%;
+	background-color: #152035; 
+	background-image: url('http://i68.tinypic.com/209mv54.jpg');
+	background-size: cover;
+	color: #FFFFFF;
+}
+.enchantment-link, tw-link {
+	color: #00D6A6;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #33ccff;
+}
+
+
+.header {
+  	font-family: Libre+Franklin, sans-serif;
+}
+
+tw-story[tags~="Toggle"] {
+	background-image: url('https://wiredferret.github.io/Toggle/img/Toggle_background.jpg');
+	color: #00D6A6
+}
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="" position="325,25">In the beginning, there was darkness.
+
+[[Launch Time]]
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="2" name="Launch Time" tags="Toggle" position="600,50">This is Toggle.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191226.jpg&quot; width=500&gt;
+
+Pack everything Toggle needs for a trip!
+[[Rocket fuel]]
+[[Spacelane flags]]
+[[Crew]]
+[[Swag]]
+
+[[All packed!|Adventure choices]]</tw-passagedata><tw-passagedata pid="3" name="Adventure choices" tags="" position="600,200">#Adventure 
+#choices
+
+Hey, audience! Let&#x27;s choose our adventure. 
+
+(text-style:&quot;rumble&quot;)[Where shall we go?]
+
+* [[Development]]
+* [[Design]]
+* [[O(o)ps|O(o)ps]]
+* [[Sales and Marketing]]
+* [[User fun]]
+* [[Deployment]]
+* [[Case study]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190630.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="303,501">##Development
+You are a developer deploying, but not always for external audiences. You might want to turn on features in these ways:
+
+[[Internal testing]]
+[[Dogfood]]
+[[Visibility]]
+[[Merging]]
+
+[[Back to Adventure Choices|Adventure choices]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=500&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="846,502">##Design
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Toggle_launching.jpg&quot; width=600&gt;
+
+[[A/B testing]]
+[[Accessibility]]
+[[White-labeling]]
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="6" name="O(o)ps" tags="Oops" position="1345,497">##O(o)ps
+
+Ops is full of people who care about things working.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192012.jpg&quot; width=500&gt;
+
+[[Failover]]
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="7" name="Sales and Marketing" tags="Sales" position="1663,498">##Sales and Marketing
+
+&lt;!--demo screencap? Animated gif?&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191941.jpg&quot; width=500&gt;
+
+[[This or that?|A/B testing]]
+[[Currency]]
+[[Market segments]]
+[[Feature tiers]]
+[[Tutorials]]</tw-passagedata><tw-passagedata pid="8" name="User fun" tags="User Design" position="2108,499">##User settings
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191542.jpg&quot; width=&quot;500&quot;&gt;
+
+Whatever their goal, we want to make sure the users, and the travelers, get the experience they are hoping for.
+
+[[User colors]]
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="9" name="Deployment" tags="Deployment" position="2573,501">##Deployment
+Deployment is not the same thing as activation.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=500&gt;
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+[[Internal testing]]</tw-passagedata><tw-passagedata pid="10" name="User colors" tags="User" position="1977,879">(enchant: ?Page, (background: &quot;none&quot;))
+##Colors
+(background: #ff00ff)[Users have a lot of feelings about their interfaces.]
+(text-colour: white)[Some of us need high-contrast text to read.]
+(css: &quot;font-size: 200%&quot;)[Some of us need larger text.]
+
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choice|Adventure choices]]</tw-passagedata><tw-passagedata pid="11" name="Accessibility" tags="User Design" position="2121,876">##Accessibility
+
+&lt;!--accessible navigation&gt;
+
+[[User colors]]
+[[SSO customization]]
+
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="12" name="Internal testing" tags="Deployment Development" position="2399,879">##Internal testing
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Dogfood]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="13" name="Canary launch" tags="Deployment" position="2535,880">##Canary launch
+&lt;!--bird in space suit&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Internal testing]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="14" name="Albatross launch" tags="Deployment" position="2672,879">##Albatross launch
+&lt;-- Don&#x27;t wanna go!&gt;
+
+[[Internal testing]]
+[[Canary launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="15" name="Market segments" tags="Deployment Sales-and-marketing" position="2801,876">##Segments
+
+&lt;!-- Pie&gt;
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Sales and Marketing|Sales and Marketing]]</tw-passagedata><tw-passagedata pid="16" name="Kill switch" tags="Deployment Oops" position="2929,881">##(text-style:&quot;blink&quot;)+(text-color:&quot;yellow&quot;)[aOOOga!]
+&lt;!--add a klaxon sound--&gt;
+Something has gone very wrong with a feature, and you need to get it out of production fast!
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+
+[[Back to Deployment|Deployment]]
+[[Back to O(o)ps|O(o)ps]]</tw-passagedata><tw-passagedata pid="17" name="Dogfood" tags="Development" position="153,890">##Dogfood
+
+[[Visibility]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure Choices|Adventure choices]]
+</tw-passagedata><tw-passagedata pid="18" name="Visibility" tags="Development" position="334,883">##Visibility
+Test in production, but not where anyone can see.
+
+[[Dogfood]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="19" name="Merging" tags="Development" position="502,876">##Merging
+
+&lt;!-- Merge spaghetti--&gt;
+
+[[Visibility]]
+[[Dogfood]]
+[[Adventure choices]]
+</tw-passagedata><tw-passagedata pid="20" name="Currency" tags="Sales User" position="1517,873">#Currency
+&lt;!--money--&gt;
+
+[[Feature tiers]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="21" name="Feature tiers" tags="Sales" position="1665,872">##You get what you pay for
+
+Sometimes we want our users to have different experiences, depending on what they paid for. 
+
+[[Currency]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Tutorials" tags="Sales User" position="1827,876">##Tutorials
+
+&lt;!-- slack popup--&gt;
+
+[[Feature tiers]]
+[[Currency]]
+[[Market segments]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="23" name="Failover" tags="Oops" position="1183,877">##Failover
+
+You have a backup, right?
+&lt;!--smoking spaceship&gt;
+
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="24" name="Deployment failure" tags="Oops" position="1369,881">##Fail forward
+One failure, many successes
+&lt;!--one failure, many successes--&gt;
+
+[[Kill switch]]
+[[Failover]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="25" name="Rocket fuel" tags="Toggle" position="750,50">##Rocket fuel
+
+You&#x27;re going to need some rocket fuel to get going. Have you loaded it carefully? You don&#x27;t want the elements to cross over or mix too early.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/dietcoke_and_mentos.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="26" name="Spacelane flags" tags="Toggle" position="922,51">##Spacelane flags
+
+Toggle&#x27;s spacelane markers look like this:
+&lt;img src=&quot;https://civilianmilitaryintelligencegroup.com/wp-content/uploads/2013/09/heliograph1.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="27" name="Crew" tags="Toggle" position="1068,54">##Crew
+
+Toggle frequently travels alone, but even then, they have their support crew back home.
+
+&lt;img src=&quot;http://i66.tinypic.com/fk48eb.png&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+[[Swag]]</tw-passagedata><tw-passagedata pid="28" name="White-labeling" tags="Design" position="837,879">##White-labeling
+
+&lt;!--generic label--&gt;
+
+[[Custom documentation]]
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="29" name="Custom documentation" tags="Design" position="665,878">##Custom documentation
+What people want, when they want it.
+
+[[Disguises|White-labeling]] 
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="30" name="Case study" tags="Case-study" position="3634,52">Let&#x27;s talk about how a hypothetical spaceline company added feature management using flags. 
+
+Which do you think they chose to start with?
+
+[[Terraforming|Retrofit]]
+[[Unexplored planets|New feature]]
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190659-1-1.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="31" name="New feature" tags="Case-study" position="3434,269">##Unexplored planets
+
+&lt;!-- green field&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190727.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Git and branches]]
+[[Flags and mainline]]</tw-passagedata><tw-passagedata pid="32" name="Retrofit" tags="Case-study" position="4059,281">Nothing new between the suns. 
+
+There are three main proposals. Which do you vote for?
+
+[[Slow and steady]]
+[[Only new features]]
+[[Rip off the bandaid]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="33" name="Git and branches" tags="Case-study" position="3240,503">##Git and branches
+&lt;!--ol&#x27; reliable&gt;
+
+[[Planet 1|Goes fine]]
+[[Planet 2|Merge conflict]]
+[[Planet 3|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="34" name="Flags and mainline" tags="Case-study" position="3639,489">##Flags and trunk development
+The new CTO at Spacelanes, Inc. is committed to Continuous Deployment and Integration. They want to be able to deploy dozens of times a day and turn features on and off when they&#x27;re ready. 
+
+[[Planet Up|Deploy darkly]]
+[[Planet Charmed|Feature failed fast]]
+[[Planet Gluon|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="35" name="Goes fine" tags="Case-study" position="3386,890">Congratulations!
+
+You&#x27;ve successfully used branching development to create and release the routes for Spacelanes, Inc.
+&lt;!-- space cake&gt;
+
+Ready for your next assignment?
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="36" name="Merge conflict" tags="Case-study" position="3103,885">&lt;!--merge conflict&gt;
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/galaxy.jpg&quot;&gt;
+Try again?
+[[Left planet|Goes fine]]
+[[Right planet|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="37" name="Git trauma therapist required" tags="Case-study" position="3240,885">&lt;!-- pile-up&gt;
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/img_0830.jpg&quot; width=500&quot;&gt;
+
+Try again?
+[[Top planet|Goes fine]]
+[[Strange planet|Merge conflict]]</tw-passagedata><tw-passagedata pid="38" name="Deploy darkly" tags="Case-study" position="3546,891">Deploy and test quietly, before the crowd.
+
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/Toggle_launching.jpg&quot; width=500&gt;
+
+Congratulations, team!
+
+Ready for your next assignment?
+[[Case study]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="39" name="Feature failed fast" tags="Case-study" position="3685,889">That&#x27;s not gonna work!
+
+Try again?
+[[Planet Muon|Deploy darkly]]
+[[Planet Eta Ceta|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="40" name="Slow your roll....out" tags="Case-study" position="3824,891">Too much! Let&#x27;s slow that down.
+
+Try again?
+[[Planet Erehwon|Feature failed fast]]
+[[Planet Ruritania|Deploy darkly]]</tw-passagedata><tw-passagedata pid="41" name="Slow and steady" tags="Case-study" position="3854,497">Conversion is slow, but it will get us there eventually.
+
+&lt;!-- rivets&gt;
+
+[[Works great]]</tw-passagedata><tw-passagedata pid="42" name="Only new features" tags="Case-study" position="4059,499">Only new features get flags.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="43" name="Rip off the bandaid" tags="Case-study" position="4234,499">This is gonna hurt, but only for a bit
+
+&lt;!-- bandaid&gt;
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="44" name="Training is hard" tags="Case-study" position="3999,887">Teaching people to change the way they work requires everyone to make a conscious effort, and it means that people who used to be really fast at their job are a bit slower. 
+&lt;!--toggle thumbs up&gt;
+
+[[Works great]]
+</tw-passagedata><tw-passagedata pid="45" name="Works great" tags="Case-study" position="4141,886">Toggle loves everyone in this space cantina!  
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192030-4.jpg&quot; width=800&gt;
+[[Case study]]</tw-passagedata><tw-passagedata pid="46" name="A/B testing" tags="" position="1011,877">##A/B testing
+
+&lt;!--On beyond Z?&gt;
+[[Design]]
+[[Custom documentation]]
+[[White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="47" name="SSO customization" tags="User" position="2267,879">##Single Sign-on
+
+&lt;!-- space launch key&gt;
+
+[[User colors]]
+[[Accessibility]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="48" name="Swag" tags="Toggle" position="1198,217">##Swag
+Just like Toggle, I have a team that makes navigating deployment and release much faster and safer. We provide feature flags as a service, and if you&#x27;d like to know more about that, you can visit:
+
+&#x27;&#x27;http://go.launchdarkly.com/nodevember&#x27;&#x27; 
+
+They&#x27;ll be happy to send you a free t-shirt and some stickers of Toggle.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/LaunchDarklyBayBridge.jpeg&quot; width=700&gt;
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="49" name="footer" tags="footer" position="2916,1166">
+(css: &quot;font-size: 50%;&quot;)[@wiredferret | Nodevember | Heidi Waterhouse | LaunchDarkly]</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Choose Your Own Deploy Nodevember" startnode="1" creator="Twine" creator-version="2.1.3" ifid="8D1F1E27-9703-4EA8-8A80-691C147B1874" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Franklin+Libre');
+@import url('http://i68.tinypic.com/209mv54.jpg');
+  
+body, tw-story {
+	
+  	font-family: Nunito, san-serif;
+  	font-size: 150%;
+	background-color: #152035; 
+	background-image: url('http://i68.tinypic.com/209mv54.jpg');
+	background-size: cover;
+	color: #FFFFFF;
+}
+.enchantment-link, tw-link {
+	color: #00D6A6;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #33ccff;
+}
+
+
+.header {
+  	font-family: Libre+Franklin, sans-serif;
+}
+
+tw-story[tags~="Toggle"] {
+	background-image: url('https://wiredferret.github.io/Toggle/img/Toggle_background.jpg');
+	color: #00D6A6
+}
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="" position="325,25">In the beginning, there was darkness.
+
+[[Launch Time]]
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="2" name="Launch Time" tags="Toggle" position="600,50">This is Toggle.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191226.jpg&quot; width=500&gt;
+
+Pack everything Toggle needs for a trip!
+[[Rocket fuel]]
+[[Spacelane flags]]
+[[Crew]]
+[[Swag]]
+
+[[All packed!|Adventure choices]]</tw-passagedata><tw-passagedata pid="3" name="Adventure choices" tags="" position="600,200">#Adventure 
+#choices
+
+Hey, audience! Let&#x27;s choose our adventure. 
+
+(text-style:&quot;rumble&quot;)[Where shall we go?]
+
+* [[Development]]
+* [[Design]]
+* [[O(o)ps|O(o)ps]]
+* [[Sales and Marketing]]
+* [[User fun]]
+* [[Deployment]]
+* [[Case study]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190630.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="303,501">##Development
+You are a developer deploying, but not always for external audiences. You might want to turn on features in these ways:
+
+[[Internal testing]]
+[[Dogfood]]
+[[Visibility]]
+[[Merging]]
+
+[[Back to Adventure Choices|Adventure choices]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=500&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="846,502">##Design
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Toggle_launching.jpg&quot; width=600&gt;
+
+[[A/B testing]]
+[[Accessibility]]
+[[White-labeling]]
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="6" name="O(o)ps" tags="Oops" position="1345,497">##O(o)ps
+
+Ops is full of people who care about things working.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192012.jpg&quot; width=500&gt;
+
+[[Failover]]
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="7" name="Sales and Marketing" tags="Sales" position="1663,498">##Sales and Marketing
+
+&lt;!--demo screencap? Animated gif?&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191941.jpg&quot; width=500&gt;
+
+[[This or that?|A/B testing]]
+[[Currency]]
+[[Market segments]]
+[[Feature tiers]]
+[[Tutorials]]</tw-passagedata><tw-passagedata pid="8" name="User fun" tags="User Design" position="2108,499">##User settings
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191542.jpg&quot; width=&quot;500&quot;&gt;
+
+Whatever their goal, we want to make sure the users, and the travelers, get the experience they are hoping for.
+
+[[User colors]]
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="9" name="Deployment" tags="Deployment" position="2573,501">##Deployment
+Deployment is not the same thing as activation.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=500&gt;
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+[[Internal testing]]</tw-passagedata><tw-passagedata pid="10" name="User colors" tags="User" position="1977,879">(enchant: ?Page, (background: &quot;none&quot;))
+##Colors
+(background: #ff00ff)[Users have a lot of feelings about their interfaces.]
+(text-colour: white)[Some of us need high-contrast text to read.]
+(css: &quot;font-size: 200%&quot;)[Some of us need larger text.]
+
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choice|Adventure choices]]</tw-passagedata><tw-passagedata pid="11" name="Accessibility" tags="User Design" position="2121,876">##Accessibility
+
+&lt;!--accessible navigation&gt;
+
+[[User colors]]
+[[SSO customization]]
+
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="12" name="Internal testing" tags="Deployment Development" position="2399,879">##Internal testing
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Dogfood]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="13" name="Canary launch" tags="Deployment" position="2535,880">##Canary launch
+&lt;!--bird in space suit&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Internal testing]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="14" name="Albatross launch" tags="Deployment" position="2672,879">##Albatross launch
+&lt;-- Don&#x27;t wanna go!&gt;
+
+[[Internal testing]]
+[[Canary launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="15" name="Market segments" tags="Deployment Sales-and-marketing" position="2801,876">##Segments
+
+&lt;!-- Pie&gt;
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Sales and Marketing|Sales and Marketing]]</tw-passagedata><tw-passagedata pid="16" name="Kill switch" tags="Deployment Oops" position="2929,881">##(text-style:&quot;blink&quot;)+(text-color:&quot;yellow&quot;)[aOOOga!]
+&lt;!--add a klaxon sound--&gt;
+Something has gone very wrong with a feature, and you need to get it out of production fast!
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+
+[[Back to Deployment|Deployment]]
+[[Back to O(o)ps|O(o)ps]]</tw-passagedata><tw-passagedata pid="17" name="Dogfood" tags="Development" position="153,890">##Dogfood
+
+[[Visibility]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure Choices|Adventure choices]]
+</tw-passagedata><tw-passagedata pid="18" name="Visibility" tags="Development" position="334,883">##Visibility
+Test in production, but not where anyone can see.
+
+[[Dogfood]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="19" name="Merging" tags="Development" position="502,876">##Merging
+
+&lt;!-- Merge spaghetti--&gt;
+
+[[Visibility]]
+[[Dogfood]]
+[[Adventure choices]]
+</tw-passagedata><tw-passagedata pid="20" name="Currency" tags="Sales User" position="1517,873">#Currency
+&lt;!--money--&gt;
+
+[[Feature tiers]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="21" name="Feature tiers" tags="Sales" position="1665,872">##You get what you pay for
+
+Sometimes we want our users to have different experiences, depending on what they paid for. 
+
+[[Currency]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Tutorials" tags="Sales User" position="1827,876">##Tutorials
+
+&lt;!-- slack popup--&gt;
+
+[[Feature tiers]]
+[[Currency]]
+[[Market segments]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="23" name="Failover" tags="Oops" position="1183,877">##Failover
+
+You have a backup, right?
+&lt;!--smoking spaceship&gt;
+
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="24" name="Deployment failure" tags="Oops" position="1369,881">##Fail forward
+One failure, many successes
+&lt;!--one failure, many successes--&gt;
+
+[[Kill switch]]
+[[Failover]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="25" name="Rocket fuel" tags="Toggle" position="750,50">##Rocket fuel
+
+You&#x27;re going to need some rocket fuel to get going. Have you loaded it carefully? You don&#x27;t want the elements to cross over or mix too early.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/dietcoke_and_mentos.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="26" name="Spacelane flags" tags="Toggle" position="922,51">##Spacelane flags
+
+Toggle&#x27;s spacelane markers look like this:
+&lt;img src=&quot;https://civilianmilitaryintelligencegroup.com/wp-content/uploads/2013/09/heliograph1.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="27" name="Crew" tags="Toggle" position="1068,54">##Crew
+
+Toggle frequently travels alone, but even then, they have their support crew back home.
+
+&lt;img src=&quot;http://i66.tinypic.com/fk48eb.png&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+[[Swag]]</tw-passagedata><tw-passagedata pid="28" name="White-labeling" tags="Design" position="837,879">##White-labeling
+
+&lt;!--generic label--&gt;
+
+[[Custom documentation]]
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="29" name="Custom documentation" tags="Design" position="665,878">##Custom documentation
+What people want, when they want it.
+
+[[Disguises|White-labeling]] 
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="30" name="Case study" tags="Case-study" position="3634,52">Let&#x27;s talk about how a hypothetical spaceline company added feature management using flags. 
+
+Which do you think they chose to start with?
+
+[[Terraforming|Retrofit]]
+[[Unexplored planets|New feature]]
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190659-1-1.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="31" name="New feature" tags="Case-study" position="3434,269">##Unexplored planets
+
+&lt;!-- green field&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190727.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Git and branches]]
+[[Flags and mainline]]</tw-passagedata><tw-passagedata pid="32" name="Retrofit" tags="Case-study" position="4059,281">Nothing new between the suns. 
+
+There are three main proposals. Which do you vote for?
+
+[[Slow and steady]]
+[[Only new features]]
+[[Rip off the bandaid]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="33" name="Git and branches" tags="Case-study" position="3240,503">##Git and branches
+&lt;!--ol&#x27; reliable&gt;
+
+[[Planet 1|Goes fine]]
+[[Planet 2|Merge conflict]]
+[[Planet 3|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="34" name="Flags and mainline" tags="Case-study" position="3639,489">##Flags and trunk development
+The new CTO at Spacelanes, Inc. is committed to Continuous Deployment and Integration. They want to be able to deploy dozens of times a day and turn features on and off when they&#x27;re ready. 
+
+[[Planet Up|Deploy darkly]]
+[[Planet Charmed|Feature failed fast]]
+[[Planet Gluon|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="35" name="Goes fine" tags="Case-study" position="3386,890">Congratulations!
+
+You&#x27;ve successfully used branching development to create and release the routes for Spacelanes, Inc.
+&lt;!-- space cake&gt;
+
+Ready for your next assignment?
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="36" name="Merge conflict" tags="Case-study" position="3103,885">&lt;!--merge conflict&gt;
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/galaxy.jpg&quot;&gt;
+Try again?
+[[Left planet|Goes fine]]
+[[Right planet|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="37" name="Git trauma therapist required" tags="Case-study" position="3240,885">&lt;!-- pile-up&gt;
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/img_0830.jpg&quot; width=500&quot;&gt;
+
+Try again?
+[[Top planet|Goes fine]]
+[[Strange planet|Merge conflict]]</tw-passagedata><tw-passagedata pid="38" name="Deploy darkly" tags="Case-study" position="3546,891">Deploy and test quietly, before the crowd.
+
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/Toggle_launching.jpg&quot; width=500&gt;
+
+Congratulations, team!
+
+Ready for your next assignment?
+[[Case study]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="39" name="Feature failed fast" tags="Case-study" position="3685,889">That&#x27;s not gonna work!
+
+Try again?
+[[Planet Muon|Deploy darkly]]
+[[Planet Eta Ceta|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="40" name="Slow your roll....out" tags="Case-study" position="3824,891">Too much! Let&#x27;s slow that down.
+
+Try again?
+[[Planet Erehwon|Feature failed fast]]
+[[Planet Ruritania|Deploy darkly]]</tw-passagedata><tw-passagedata pid="41" name="Slow and steady" tags="Case-study" position="3854,497">Conversion is slow, but it will get us there eventually.
+
+&lt;!-- rivets&gt;
+
+[[Works great]]</tw-passagedata><tw-passagedata pid="42" name="Only new features" tags="Case-study" position="4059,499">Only new features get flags.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="43" name="Rip off the bandaid" tags="Case-study" position="4234,499">This is gonna hurt, but only for a bit
+
+&lt;!-- bandaid&gt;
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="44" name="Training is hard" tags="Case-study" position="3999,887">Teaching people to change the way they work requires everyone to make a conscious effort, and it means that people who used to be really fast at their job are a bit slower. 
+&lt;!--toggle thumbs up&gt;
+
+[[Works great]]
+</tw-passagedata><tw-passagedata pid="45" name="Works great" tags="Case-study" position="4141,886">Toggle loves everyone in this space cantina!  
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192030-4.jpg&quot; width=800&gt;
+[[Case study]]</tw-passagedata><tw-passagedata pid="46" name="A/B testing" tags="" position="1011,877">##A/B testing
+
+&lt;!--On beyond Z?&gt;
+[[Design]]
+[[Custom documentation]]
+[[White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="47" name="SSO customization" tags="User" position="2267,879">##Single Sign-on
+
+&lt;!-- space launch key&gt;
+
+[[User colors]]
+[[Accessibility]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="48" name="Swag" tags="Toggle" position="1198,217">##Swag
+Just like Toggle, I have a team that makes navigating deployment and release much faster and safer. We provide feature flags as a service, and if you&#x27;d like to know more about that, you can visit:
+
+&#x27;&#x27;http://go.launchdarkly.com/nodevember&#x27;&#x27; 
+
+They&#x27;ll be happy to send you a free t-shirt and some stickers of Toggle.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/LaunchDarklyBayBridge.jpeg&quot; width=700&gt;
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="49" name="footer" tags="footer" position="2916,1166">
+(css: &quot;font-size: 50%;&quot;)[@wiredferret | Nodevember | Heidi Waterhouse | LaunchDarkly]</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Choose Your Own Toggle" startnode="" creator="Twine" creator-version="2.1.3" ifid="045B7595-35D4-4B5C-A9E3-4F2B203C5F5B" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Franklin+Libre');
+@import url('http://i68.tinypic.com/209mv54.jpg');
+  
+body, tw-story {
+	
+  	font-family: Nunito, san-serif;
+  	font-size: 150%;
+	background-color: #152035; 
+	background-image: url('http://i68.tinypic.com/209mv54.jpg');
+	background-size: cover;
+	color: #FFFFFF;
+}
+.enchantment-link, tw-link {
+	color: #00D6A6;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #33ccff;
+}
+
+
+.header {
+  	font-family: Libre+Franklin, sans-serif;
+}
+
+tw-story[tags~="Toggle"] {
+	background-image: url('https://wiredferret.github.io/Toggle/img/Toggle_background.jpg');
+	color: #00D6A6
+}
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="" position="325,25">In the beginning, there was darkness.
+
+[[Launch Time]]
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="2" name="Launch Time" tags="Toggle" position="600,50">This is Toggle.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191226.jpg&quot; width=500&gt;
+
+Toggle is a space explorer and spacelane maintainer. Their job is to go to new parts of space and plant spacelane flags so that the home office can create safe, efficient spacelanes.
+
+Pack everything Toggle needs for a trip!
+[[Rocket fuel]]
+[[Spacelane flags]]
+[[Tunes]]
+[[Crew]]
+
+[[All packed!|Adventure choices]]</tw-passagedata><tw-passagedata pid="3" name="Adventure choices" tags="" position="600,200">#Adventure 
+#choices
+
+Hey, audience! Let&#x27;s choose our adventure. You can&#x27;t all vote, because it would take forever, so I&#x27;m just going to point at someone making eye contact with me, and they can make a choice.
+
+(text-style:&quot;rumble&quot;)[Where shall we go?]
+
+* [[Development]]
+* [[Design]]
+* [[O(o)ps|O(o)ps]]
+* [[Sales and Marketing]]
+* [[User fun]]
+* [[Deployment]]
+* [[Case study]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190630.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="53,473">##Development
+You are a developer deploying, but not always for external audiences. You might want to turn on features in these ways:
+
+[[Internal testing]]
+[[Dogfood]]
+[[Visibility]]
+[[Merging]]
+
+[[Back to Adventure Choices|Adventure choices]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=500&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="326,456">##Design
+Feature management is easy for everyone! What if your design team would like a chance to test some of the changes that they&#x27;ve been making to the interface?
+
+Toggle likes to think about making a giant dot-to-dot drawing of all the flags they&#x27;ve placed.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/Toggle_launching.jpg&quot; width=600&gt;
+
+[[A/B testing]]
+[[Accessibility]]
+[[White-labeling]]
+[[Custom documentation]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="6" name="O(o)ps" tags="Oops" position="550,450">##O(o)ps
+We all know that the operations part of DevOps is full of people who care passionately about uptime, solid delivery, and security. They want a hand in feature management and a way to make sure they can turn things off in a hurry.
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192012.jpg&quot; width=500&gt;
+
+[[Failover]]
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="7" name="Sales and Marketing" tags="Sales" position="750,450">##Sales and Marketing
+Our products aren&#x27;t very successful if we can&#x27;t get people to want them and use them. For that we need marketing people to explain why our product is awesome, and sales people to find the people who need our solutions. These teams also need to be able to configure some parts of your product without a lot of fuss.
+&lt;!--demo screencap?&gt;
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191941.jpg&quot; width=500&gt;
+
+[[This or that?|A/B testing]]
+[[Currency]]
+[[Market segments]]
+[[Feature tiers]]
+[[Tutorials]]</tw-passagedata><tw-passagedata pid="8" name="User fun" tags="User Design" position="950,456">##User settings
+If there were no space travelers, Toggle wouldn&#x27;t have a job. But different travelers care about different things. Some of them want to get where they&#x27;re going as fast as possible, and some want to route around black-hole turbulence. Some travelers want to see as many planets as they can. 
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_191542.jpg&quot; width=&quot;500&quot;&gt;
+
+Whatever their goal, we want to make sure the users, and the travelers, get the experience they are hoping for.
+
+[[User colors]]
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="9" name="Deployment" tags="Deployment" position="1160,466">##Deployment
+Deployment is not the same thing as activation.
+
+Toggle deploys spacelane flags on moons and planets.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=500&gt;
+
+But until the signal is sent to activate them, they are dark and silent, waiting.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+[[Internal testing]]</tw-passagedata><tw-passagedata pid="10" name="User colors" tags="User" position="953,635">(enchant: ?Page, (background: &quot;none&quot;))
+##Colors
+(background: #ff00ff)[Users have a lot of feelings about their interfaces.]
+(text-colour: white)[Some of us need high-contrast text to read.]
+(css: &quot;font-size: 200%&quot;)[Some of us need larger text.]
+
+You can use feature flags and feature management to offer your users a high-contrast version of your site. Or one that looks like a hot dog stand.
+
+[[Accessibility]]
+[[SSO customization]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choice|Adventure choices]]</tw-passagedata><tw-passagedata pid="11" name="Accessibility" tags="User Design" position="955,820">##Accessibility
+Accessibility can include colors, but it can also mean offering users interfaces designed for tabbed or touch interfaces, interfaces that don&#x27;t download images for slow connections, or even interfaces that are automatically dimmed at night.
+
+The Net doesn&#x27;t always have a lot of bandwidth between the stars, so Toggle appreciates it when she can set the tablet to only download images when they click them. It&#x27;s fine to download everything planetside, but not out here.
+
+[[User colors]]
+[[SSO customization]]
+
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="12" name="Internal testing" tags="Deployment Development" position="1161,636">##Internal testing
+Before you send someone out into deep space, you have them spend some time tooling around the solar system.
+
+In the same way, you may want to test a product internally before you show it to the outside world. Use a feature toggle to turn it on only for the people who are logged in from your company IP addresses.
+
+[[Canary launch]]
+[[Albatross launch]]
+[[Dogfood]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="13" name="Canary launch" tags="Deployment" position="1165,816">##Canary launch
+Any spaceperson will tell you that you don&#x27;t have to turn your rockets all the way on or all the way off to get where you&#x27;re going. Steady, constant acceleration will do the trick and leave you more room for emergency manuevering.
+
+When we launch a product, we can start by showing it just to the people who signed up as beta testers, or just to 10% of our user base. That gives us some time to make sure there aren&#x27;t any unexpected effects at a larger scale, and that our infrastructure is up to the load. We can gradually increase the roll-out.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190835-1.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Internal testing]]
+[[Albatross launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="14" name="Albatross launch" tags="Deployment" position="1166,996">##Albatross launch
+Not everyone is excited about the amazing new features you&#x27;ve added. In fact, some people are really resistant to change, because they&#x27;ve built a whole infrastructure around the way it used to be.
+
+Rather than force them to upgrade, you can create a non-upgrading group, and leave them out of all the new stuff so they can keep doing their custom things.
+
+[[Internal testing]]
+[[Canary launch]]
+[[Market segments]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="15" name="Market segments" tags="Deployment Sales-and-marketing" position="1166,1156">##Segments
+Your feature may be banned in some countries. Or you may need to use a different method of data collection. What if you need to comply with COPPA, to track how children use your site?
+
+Your deployment can have room for all these variables in the same codebase, if you take the time to design your features to be able to operate independently as they are switched on and off.
+
+Think of your features like microservices - nothing is going to need to call all of them except a test harness.
+
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Kill switch]]
+
+[[Back to Deployment|Deployment]]
+[[Back to Sales and Marketing|Sales and Marketing]]</tw-passagedata><tw-passagedata pid="16" name="Kill switch" tags="Deployment Oops" position="1175,1315">##(text-style:&quot;blink&quot;)+(text-color:&quot;yellow&quot;)[aOOOga!]
+&lt;!--add a klaxon sound--&gt;
+Something has gone very wrong with a feature, and you need to get it out of production fast!
+
+How fast does the kill switch work?
+
+Literally (the literal literally), faster than you can say &quot;Kill that feature&quot;.
+
+If there&#x27;s one thing Toggle appreciates, it&#x27;s swift emergency response.
+
+[[Internal testing]]
+[[Canary launch]]
+[[Albatross launch]]
+[[Market segments]]
+
+[[Back to Deployment|Deployment]]
+[[Back to O(o)ps|O(o)ps]]</tw-passagedata><tw-passagedata pid="17" name="Dogfood" tags="Development" position="48,650">##Dogfood
+Toggle hopes they don&#x27;t have to eat dogfood on their mission! But developers have made a joke about this - their dogfood (code) is so delicious that they would eat it like human food. 
+
+If you want to test in production, but not publicly, set your flags to show the feature only to internal users.
+
+[[Visibility]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure Choices|Adventure choices]]
+</tw-passagedata><tw-passagedata pid="18" name="Visibility" tags="Development" position="50,835">##Visibility
+Developers want to be able to see their changes to test them, but they may not be ready for everyone to see them.
+
+You can turn on a feature just for yourself while you&#x27;re figuring it out. Just create the flag and add yourself as the only person who can see it.
+
+Toggle tries out a lot of fancy dance moves when no one is around to see it.
+
+[[Dogfood]]
+[[Merging]]
+
+[[Back to Development|Development]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="19" name="Merging" tags="Development" position="50,1000">##Merging
+
+If you&#x27;ve ever had to have an extended negotiation with someone because you have a merge conflict, you know why it&#x27;s best to do trunk development or very short-lived branches. Trunk development seems risky until you realize that you have total control over what is actually released.
+&lt;!-- Merge spaghetti--&gt;
+
+Sometimes it&#x27;s hard keep a bunch of branches straight in space-time. That&#x27;s why Toggle wishes that everyone used the same spacelane, but Toggle doesn&#x27;t always get their way.
+
+[[Visibility]]
+[[Dogfood]]
+[[Adventure choices]]
+</tw-passagedata><tw-passagedata pid="20" name="Currency" tags="Sales User" position="748,641">#Currency
+How do you want to get paid? Toggle gets paid in bars of gold-pressed latinum, but you may want to switch your prices from US dollars to Canadian dolllars, or yen or pesos or euros. 
+
+The user&#x27;s browser probably already knows where they are, so we just need to send them the price in the correct currency.
+&lt;!--money--&gt;
+
+[[Feature tiers]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="21" name="Feature tiers" tags="Sales" position="745,816">##You get what you pay for
+Super-luxury spaceliners are fast and comfortable, but they cost a lot to fly on. Toggle knows that if you&#x27;re willing to fly in a smaller cabin, you can save a lot of gold-pressed latinum. It&#x27;s the same spaceliner, but different experiences.
+
+Sometimes we want our users to have different experiences, depending on what they paid for. 
+
+[[Currency]]
+[[Tutorials]]
+[[Market segments]]
+
+[[Back to Sales and Marketing|Sales and Marketing]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Tutorials" tags="Sales User" position="751,1000">##Tutorials
+It&#x27;s helpful to have a tutorial the first time or two you use a product, but you don&#x27;t want it popping up Every. Single. Time. Use a feature flag to let users opt out of tutorials when they&#x27;re done.
+
+Toggle has a lot of time to do video tutorials, but they&#x27;re really sick of the tutorial about how to use the video player. 
+
+[[Feature tiers]]
+[[Currency]]
+[[Market segments]]
+
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="23" name="Failover" tags="Oops" position="546,641">##Failover
+Whether you&#x27;re live in production or on your own in trackless space, sometimes you need to switch from something that isn&#x27;t working to your backup. 
+
+You have a backup, right?
+&lt;!--smoking spaceship&gt;
+
+[[Deployment failure]]
+[[Kill switch]]
+[[Deployment]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="24" name="Deployment failure" tags="Oops" position="545,821">##Fail forward
+Sometimes things go wrong, and we usually reach for the roll-back in that case. If we just put everything back the way it was, it /should/ work again.
+
+But what if instead of rolling back, you could roll foward? Keep all the good parts of the deploy, and just turn off the one feature that is failing, rather than everything? That would be better.
+
+On a run, sometimes Toggle will put out a flag that doesn&#x27;t work right. They don&#x27;t have have to go pull out all the flags from that run, just the one that&#x27;s not working. 
+&lt;!--one failure, many successes--&gt;
+
+[[Kill switch]]
+[[Failover]]
+
+[[Back to O(o)ps|O(o)ps]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="25" name="Rocket fuel" tags="Toggle" position="750,50">##Rocket fuel
+
+You&#x27;re going to need some rocket fuel to get going. Have you loaded it carefully? You don&#x27;t want the elements to cross over or mix too early.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/dietcoke_and_mentos.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="26" name="Spacelane flags" tags="Toggle" position="1051,50">##Spacelane flags
+Spacelane flags or markers are like those old-fashioned railroad switches. Toggle plants the markers on moons, planets, and asteroids to help guide space traffic along the fastest or safest routes.
+
+Once Toggle has planted the markers, they can be changed from back in the home office without anyone being close to them, but Toggle needs to put them in place.
+
+Toggle&#x27;s spacelane markers look like this:
+&lt;img src=&quot;https://civilianmilitaryintelligencegroup.com/wp-content/uploads/2013/09/heliograph1.jpg&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="27" name="Tunes" tags="Toggle" position="900,45">##Tunes
+
+No road trip is complete without a playlist. Toggle likes these:
+
+&lt;iframe src=&quot;http://8tracks.com/mixes/8706314/player_v3_universal&quot; width=&quot;300&quot; height=&quot;250&quot; style=&quot;border: 0px none;&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;_8t_embed_p&quot; style=&quot;font-size: 11px; line-height: 12px;&quot;&gt;&lt;a href=&quot;http://8tracks.com/wiredferret/toggle-s-tunes?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;Toggle&amp;#39;s Tunes&lt;/a&gt; from &lt;a href=&quot;http://8tracks.com/wiredferret?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;wiredferret&lt;/a&gt; on &lt;a href=&quot;http://8tracks.com?utm_medium=referral&amp;utm_content=mix-page&amp;utm_campaign=embed_button&quot;&gt;8tracks Radio&lt;/a&gt;.&lt;/p&gt;
+
+[[Keep packing|Launch Time]]
+</tw-passagedata><tw-passagedata pid="28" name="Crew" tags="Toggle" position="1210,51">##Crew
+
+Toggle frequently travels alone, but even then, they have their support crew back home.
+
+&lt;img src=&quot;http://i66.tinypic.com/fk48eb.png&quot; width=500&gt;
+
+[[Keep packing|Launch Time]]
+[[Swag]]</tw-passagedata><tw-passagedata pid="29" name="White-labeling" tags="Design" position="321,831">##White-labeling
+Sometimes a client wants your product to look like they&#x27;ve made it. They want their branding and vocabulary to show up so the users have a consistent experience.
+
+We can use feature flags to switch from our branding to the customer&#x27;s branding without having to have an entirely different branch that may get out of sync.
+ 
+Toggle remembers a time they had to go replace a bunch of flags that were working, but had the wrong branding. They were pretty annoyed.
+
+[[Custom documentation]]
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="30" name="Custom documentation" tags="Design" position="325,650">##Custom documentation
+Some people want only the documentation that fits with their product. Some people want to read about everything that they could buy. With feature management, the features you deliver may be more than your application - documentation, training, [[tutorials|Tutorials]], even chatops. You choose! 
+
+Toggle pretty much only likes reading bookdiscs with happy endings, so they have the entertainment computer configured to hide all the scary and sad stories.
+
+[[Disguises|White-labeling]] 
+[[A/B testing]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="31" name="Case study" tags="Case-study" position="1920,296">Let&#x27;s talk about how a hypothetical spaceline company added feature management using flags. 
+
+Which do you think they chose to start with?
+
+[[Terraforming|Retrofit]]
+[[Unexplored planets|New feature]]
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190659-1-1.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="32" name="New feature" tags="Case-study" position="1606,458">##Unexplored planets
+It&#x27;s a brand-new, unexplored section of the multiverse. Spacelanes, Inc, can do anything they want while they build their product as fast as possible. Which way did they go?
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190727.jpg&quot; width=&quot;500&quot;&gt;
+
+[[Git and branches]]
+[[Flags and mainline]]</tw-passagedata><tw-passagedata pid="33" name="Retrofit" tags="Case-study" position="2223,458">It would be great if this sector could start from scratch, but they already have a bunch of spacelanes in place, so they need to develop around them without inconveniencing traffic.
+
+Engineering holds a meeting on Hoth, so that everyone is encouraged to work together on the problem. There are three main proposals. Which do you vote for?
+
+[[Slow and steady]]
+[[Only new features]]
+[[Rip off the bandaid]]
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_190738.jpg&quot; width=700&gt;</tw-passagedata><tw-passagedata pid="34" name="Git and branches" tags="Case-study" position="1423,635">##Git and branches
+Awesome! Spacelanes, Inc. is going to go with the safe and reliable method their engineers have used for years. They know it works, and this time will be no different.
+
+[[Planet 1|Goes fine]]
+[[Planet 2|Merge conflict]]
+[[Planet 3|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="35" name="Flags and mainline" tags="Case-study" position="1780,631">The new CTO at Spacelanes, Inc. is committed to Continuous Deployment and Integration. They want to be able to deploy dozens of times a day and turn features on and off when they&#x27;re ready. 
+
+Since this part of the galaxy is starting from scratch, they have decided to use mainline and flag development. Everyone is working in exactly the same code base and can see where everyone else is putting their spacelane plans in real time.
+
+[[Planet Up|Deploy darkly]]
+[[Planet Charmed|Feature failed fast]]
+[[Planet Gluon|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="36" name="Goes fine" tags="Case-study" position="1431,1148">Congratulations!
+
+You&#x27;ve successfully used branching development to create and release the routes for Spacelanes, Inc.
+
+Ready for your next assignment?
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="37" name="Merge conflict" tags="Case-study" position="1423,818">Well, that&#x27;s embarassing! While one of the engineers was building a spacelane, one of their co-workers built a spacelane right across it! Something is going to have to change or get reconciled, or the spaceships will run into each other.
+
+But at least nothing&#x27;s really lost, just...conflicted. I&#x27;m sure we can cherry-pick that. 
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/galaxy.jpg&quot;&gt;
+Try again?
+[[Left planet|Goes fine]]
+[[Right planet|Git trauma therapist required]]</tw-passagedata><tw-passagedata pid="38" name="Git trauma therapist required" tags="Case-study" position="1426,993">Technically, we call that a *splinch*. No one is quite sure how we will get the ships pried apart when they&#x27;re smooshed together like that. It looks like we&#x27;re going to have to back up a long ways, and several people are going to have to abandon their work. No data was lost, but it will take longer to fix it than it would to re-do it.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/img_0830.jpg&quot; width=500&quot;&gt;
+
+Try again?
+[[Top planet|Goes fine]]
+[[Strange planet|Merge conflict]]</tw-passagedata><tw-passagedata pid="39" name="Deploy darkly" tags="Case-study" position="1785,790">Each team works on their spacelane plan in the same place. Since they&#x27;re doing acceptance and integration tests automatically several times a day, they never go too far down a path that conflicts with another team.
+
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/Toggle_launching.jpg&quot; width=500&gt;
+
+After several weeks of work, a team finishes their sprint by sending Toggle or someone like them to test that the spacelane works, before they send everyone down it. Only Toggle&#x27;s ship can see the markers - they&#x27;re invisible to regular traffic. When the team is satisfied that the route is safe and stable, they turn on the markers so everyone can use the route.
+
+Congratulations, team!
+
+Ready for your next assignment?
+[[Case study]]
+[[Adventure choices]]</tw-passagedata><tw-passagedata pid="40" name="Feature failed fast" tags="Case-study" position="1780,986">Zaphod has been working on his new spacelane route since the morning float-up meeting. He thinks it will be pretty good, so he runs the test to confirm his plan.
+
+Oops! He can see right away that it will conflict with the spacelane Leeloo is building in the same area. Zaphod changes the parameters of his lane so that they won&#x27;t run into each other. Good thing he could see where she was planning to be!
+
+Try again?
+[[Planet Muon|Deploy darkly]]
+[[Planet Eta Ceta|Slow your roll....out]]</tw-passagedata><tw-passagedata pid="41" name="Slow your roll....out" tags="Case-study" position="1775,1141">Telzey&#x27;s route is looking great! There are no conflicts, it&#x27;s passing all the tests, and Toggle says it&#x27;s faster than the current route. 
+
+Telzey switches on her markers and the traffic *surges* through. It&#x27;s wonderful...except it isn&#x27;t. There isn&#x27;t enough provisioning along this route for the amount of traffic trying to take it. Before the route can support this level of traffic, Spacelanes needs to build some more infrastructure.
+
+To reduce the congestion, Telzey dials back the markers so that they only appear to every other ship. The route can handle half the traffic while Spacelanes gets the support systems in place for full traffic. 
+
+Try again?
+[[Planet Erehwon|Feature failed fast]]
+[[Planet Ruritania|Deploy darkly]]</tw-passagedata><tw-passagedata pid="42" name="Slow and steady" tags="Case-study" position="2003,636">Everyone has a quota of spacelane markers that they are supposed to convert to the new remote-switchable style. It will take time, but if everyone plugs away at their own zone, it will all get done...eventually.
+
+However, [[training is hard|Training is hard]]. It takes a long time to get people to take the conversion training, and once they do, they get distracted by current maintenance and don&#x27;t end up doing as many conversions as anyone hoped. Still, it is forward progress.
+
+[[Works great]]</tw-passagedata><tw-passagedata pid="43" name="Only new features" tags="Case-study" position="2246,635">We&#x27;re not going to try to refactor or retrofit any of the old spacelanes. Instead, we&#x27;re just going to try this new switchable marker on all of the new spacelanes we build. 
+
+It&#x27;s going to be a pain to have a split codebase, but it seems better than trying to do all the old work and the new work at the same time.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="44" name="Rip off the bandaid" tags="Case-study" position="2476,636">New spaceliners can&#x27;t use the old and new style markers at the same time. We&#x27;re going to have to convert every single marker out there if we want to retain the new and incoming traffic.
+
+This will be an all-hands-on-deck push, but when it&#x27;s over, we&#x27;ll be able to switch and control any spacelane from back in the office, and that will save a bunch of time and money. If only we can get through this next part.
+
+[[Training is hard]]
+[[Works great]]</tw-passagedata><tw-passagedata pid="45" name="Training is hard" tags="Case-study" position="2078,903">It&#x27;s really hard to change the way you understand the universe. Teaching people to change the way they work requires everyone to make a conscious effort, and it means that people who used to be really fast at their job are a bit slower. But new things are always worth learning. In the end, the team can be proud of what they accomplished.
+&lt;!--toggle thumbs up&gt;
+
+[[Works great]]
+</tw-passagedata><tw-passagedata pid="46" name="Works great" tags="Case-study" position="2348,903">Toggle loves everyone in this space cantina! Because of the new-style markers, they only have to mark a planet once, and then multiple routes can use it, instead of having to leave multiple almost-identical markers. The automated switching means that Toggle has less manual labor to do, and can spend more time on their mycology experiments. 
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/20171001_192030-4.jpg&quot; width=800&gt;</tw-passagedata><tw-passagedata pid="47" name="A/B testing" tags="" position="323,1005">Sometimes you want to see if users like A or B better. Which makes them happier? You can use feature management to split a test group or all of your customers, into groups that see different designs.
+
+[[Design]]
+[[Custom documentation]]
+[[White-labeling]]
+
+[[Back to Adventure Choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="48" name="SSO customization" tags="User" position="951,995">##Single Sign-on
+When Toggle signs into a spaceship, they expect the spaceship to remember their name and preferences. The same can be true for your users. Once we have the user&#x27;s identifier, why not give them all the settings that they would prefer to use right away?
+
+[[User colors]]
+[[Accessibility]]
+
+[[Back to User fun|User fun]]
+[[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="49" name="Swag" tags="Toggle" position="1210,201">##Swag
+Just like Toggle, I have a team that makes navigating deployment and release much faster and safer. We provide feature flags as a service, and if you&#x27;d like to know more about that, you can visit:
+
+&#x27;&#x27;http://go.launchdarkly.com/ddphoenix&#x27;&#x27; 
+
+They&#x27;ll be happy to send you a free t-shirt and some stickers of Toggle.
+
+&lt;img src=&quot;http://www.heidiwaterhouse.com/wp-content/uploads/2017/10/LaunchDarklyBayBridge.jpeg&quot; width=700&gt;
+[[Adventure choices]]
+[[Case study]]</tw-passagedata><tw-passagedata pid="50" name="footer" tags="footer" position="2460,1250">
+(css: &quot;font-size: 50%;&quot;)[@wiredferret | DevOpsDays Phoenix | Heidi Waterhouse | LaunchDarkly]</tw-passagedata></tw-storydata>
+
