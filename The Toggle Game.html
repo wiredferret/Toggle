@@ -125,7 +125,7 @@ The goal of this game is to let you explore some of the ways you can use feature
 * [[Architecture and Archeology]]
 * [[Case study]]
 
-&lt;img src=&quot;/Toggle/img/20171001_190630.jpg&quot; width=800 alt=&quot;Toggle floating in space&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="176,480" size="100,100">##Development
+&lt;img src=&quot;/Toggle/img/ld_launchers.png&quot; width=800 alt=&quot;Cartoon rocket ship with several explorers&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name="Development" tags="Development" position="176,480" size="100,100">##Development
 You are a developer deploying your code to the trunk, but not always for external audiences. You don&#39;t intend to release it now, or you are not even in charge of releases. 
 
 You might want to turn on features in these ways:
@@ -137,7 +137,7 @@ You might want to turn on features in these ways:
 
 [[Back to Adventure Choices|Adventure choices]]
 
-&lt;img src=&quot;/Toggle/img/sticker_black-bg.jpg&quot; width=500 alt=&quot;LaunchDarkly rocket sticker on a celestial fabric background&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="666,478" size="100,100">##Design
+&lt;img src=&quot;/Toggle/img/sticker_black_bg.jpg&quot; width=500 alt=&quot;LaunchDarkly rocket sticker on a celestial fabric background&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="Design" tags="Design" position="666,478" size="100,100">##Design
 
 Using feature flags for design is a way to give designers and product owners control over the user experience without having to go back to development with requests for every change. 
 
@@ -245,6 +245,7 @@ Toggle isn&#39;t part of the Canteen Crew, but they do help out by testing space
 [[Albatross launch]]
 [[Market segments]]
 [[Kill switch]]
+&lt;img src=&quot;/Toggle/img/persimmon.jpg&quot; width=300 alt=&quot;Dried persimmons getting ready for space&quot;&gt;
 
 [[Back to Deployment|Deployment]]
 [[Back to Development|Development]]
@@ -294,6 +295,9 @@ You might be making bogus stock trades or spamming your cloud provider, or spinn
 
 Since you wrapped the feature in a flag, all you have to do is turn the flag off. If your flag management system is push-based, the change will happen very rapidly, almost instantly. If the system is based on polling, it will turn off as soon as a request can be returned. Either way, it will probably be much faster than finding a build that doesn&#39;t have the problem and deploying it to everyone.
 
+For SpaceLanes, flipping the kill switch means that no liner will be routed near the problem until we figure out what&#39;s going on. Because sometimes what&#39;s going on is Not Good.
+&lt;img src=&quot;/Toggle/img/black_hole.jpg&quot; width=500 alt=&quot;Artist&#39;s rendering of a black hole&quot;&gt;
+
 [[Internal testing]]
 [[Canary launch]]
 [[Albatross launch]]
@@ -302,14 +306,14 @@ Since you wrapped the feature in a flag, all you have to do is turn the flag off
 [[Back to Deployment|Deployment]]
 [[Back to O(o)ps|O(o)ps]]</tw-passagedata><tw-passagedata pid="17" name="Visibility" tags="Development" position="29,875" size="100,100">##Visibility
 Test in production, but not where anyone can see.
-
+&lt;img src=&quot;/Toggle/img/magic_eye.png&quot; width=500 alt=&quot;Magic Eye puzzle, apparently random dots&quot;&gt;
 The goal is to have the ability to test your new feature against all the things that are unique about production, such as weird user accounts, message volume, scale, speed, latency, and other factors. The other goal is to never have a user complain because our testing broke their experience.
 
 Visibility is being able to control exactly who sees the feature. That might be just yourself, or your team, or anyone in your company. It might include a small number of customers or test users. It&#39;s up to you, and being able to make these choices gives you more power.
-&lt;img src=&quot;/Toggle/img/magic_eye.png&quot; width=500 alt=&quot;Magic Eye puzzle, apparently random dots&quot;&gt;
 
 [[Merging]]
 [[Deleting!]] 
+[[Internal testing]] 
 
 [[Back to Development|Development]]
 [[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="18" name="Merging" tags="Development" position="313,881" size="100,100">##Merging
@@ -370,7 +374,7 @@ For example, when you log into a new Slack channel, it ask s you if you already 
 [[Back to Adventure choices|Adventure choices]]</tw-passagedata><tw-passagedata pid="22" name="Failover" tags="Oops" position="962,883" size="100,100">##Failover
 
 You have a backup, right?
-&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/crash.jpg&quot; width=&quot;500&quot; alt=&quot;A crashed experimental jet in a desert with sad technicians standing around it&gt;
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/crash.jpg&quot; width=&quot;500&quot; alt=&quot;A crashed experimental jet in a desert with sad technicians standing around it&quot;&gt;
 Have you tested it? Because if you haven&#39;t, it&#39;s not a backup, it&#39;s a security blanket, and about as useful in case something goes wrong.
 
 When something goes wrong in your infrastructure and deployment setup, you want to be able to redirect traffic automatically, since people are the slow, meat-based part of any operations system. Using feature flags, APIs, and monitoring, you can set up your system to change to a different feature set, different hardware set, or different configuration without needing to redeploy any software.
@@ -398,7 +402,7 @@ You&#39;re going to need some rocket fuel to get going. Have you loaded it caref
 
 Rocket fuel is two unstable elements that get combined right before takeoff. This is sort of like deploying your code darkly and then turning it on when you&#39;re really ready to launch.
 
-[[Keep packing|Launch Time]]
+[[Spacelane flags]] 
 </tw-passagedata><tw-passagedata pid="25" name="Spacelane flags" tags="Toggle" position="922,51" size="100,100">##Spacelane flags
 
 Toggle&#39;s spacelane markers look like this:
@@ -406,7 +410,7 @@ Toggle&#39;s spacelane markers look like this:
 
 The way that we label our flags changes how we think of them, how long they should last, and who can see them. 
 
-[[Keep packing|Launch Time]]
+[[Swag]] 
 [[Rocket fuel]] </tw-passagedata><tw-passagedata pid="26" name="White-labeling" tags="Design" position="660,888" size="100,100">##White-labeling
 &lt;img src=&quot;/Toggle/img/Generic_Cola_Cans_1980s.jpg&quot; width=&quot;500&quot; alt=&quot;Generic cola cans, with labels that are not branded&quot;&gt;
 
@@ -426,6 +430,7 @@ What people want, when they want it.
 It&#39;s frustrating to page past or search through documentation that covers features you don&#39;t have or platforms you&#39;re not using. One of the things you can use targeted delivery for is tuning your documentation to reflect the parts of the product the customer has, and only giving them what they need.
 
 Flagging documentation and tutorials and interfaces to reflect the package the user has is a way to make them feel like they are getting the correct experience.
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/highlighting.png&quot; width=&quot;300&quot;&gt;
 
 [[Disguises|White-labeling]] 
 [[A/B testing]]
@@ -484,7 +489,7 @@ You&#39;ve successfully used branching development to create and release the rou
 Ready for your next assignment?
 [[Adventure choices]]
 [[Case study]]</tw-passagedata><tw-passagedata pid="34" name="Merge conflict" tags="Case-study" position="3979,882" size="100,100">##Merge conflict
-&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/collision.jpg&quot; alt=&quot;A galaxy collides with another&quot;&gt;
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/collision.jpg&quot; alt=&quot;A galaxy collides with another&quot; width=&quot;500&quot;&gt;
 
 Well, it&#39;s not often that a space traveller ends up in this mess, because space is pretty big, but two objects can&#39;t occupy the same space at the same time. 
 
@@ -551,7 +556,7 @@ The old system is working fine and doesn&#39;t need to be changed where it alrea
 [[Works great]]</tw-passagedata><tw-passagedata pid="41" name="Rip off the bandaid" tags="Case-study" position="5275,475" size="100,100">##Rip off the bandaid
 This is gonna hurt, but only for a bit.
 
-Sometimes the best way to handle updating a code base in to dedicate time to it and all work together to make it happen. It stops your progress on anything else, but it can be very fast and efficient since the same tasks are repeated over and over. 
+Sometimes the best way to handle updating a code base is to dedicate time to it and all work together to make it happen. It stops your progress on anything else, but it can be very fast and efficient since the same tasks are repeated over and over. 
 
 The spaceline needs to change over the way they direct ships around, and all of the existing methods on established planets are outdated. For one astral month, they dedicate all their resources to replacing old signals instead of exploring and planting new ones. At the end of that time, the core systems are all updated.
 &lt;img src=&quot;https://wiredferret.github.io/Toggle/img/bandaid.jpg&quot; width=&quot;300&quot; alt=&quot;An array of colorful banages&quot;&gt;
@@ -568,11 +573,11 @@ Toggle is a little dubious - they love their scout ship, but they agree that som
 [[Back to Case study|Case study]]</tw-passagedata><tw-passagedata pid="43" name="Works great" tags="Case-study" position="5174,866" size="100,100">##Everything works great
 Toggle loves everyone in this space cantina!  
 
-&lt;img src=&quot;/Toggle/img/20171001_192030.jpg&quot; width=800 alt=&quot;A sticker of Toggle on a red nebula background&quot;&gt;
+&lt;img src=&quot;/Toggle/img/20171001_192030.jpg&quot; width=400 alt=&quot;A sticker of Toggle on a red nebula background&quot;&gt;
 
 That was not easy, and Toggle had some long, lonely moments as they worked in the Big Black Beyond, but they knew they could always ansible their team for cat pictures.
 
-&lt;img src=&quot;/Toggle/img/cat.jpg&quot; width=&quot;500&quot; alt=&quot;It&#39;s a cat!&quot;&gt;
+&lt;img src=&quot;/Toggle/img/cat.jpg&quot; width=&quot;400&quot; alt=&quot;It&#39;s a cat!&quot;&gt;
 
 To celebrate the opening of 500 new spacelanes, Spacelanes, Inc. has called in all the scouts like Toggle, and invited all the ship technicians and spaceliner crews, and office staff to the Best Space Cantina Ever.
 
@@ -580,7 +585,7 @@ You would not believe Toggle&#39;s zero-G dance moves. They have had a lot of ti
 
 [[Case study]]
 [[Adventure choices]] </tw-passagedata><tw-passagedata pid="44" name="A/B testing" tags="Design" position="833,883" size="100,100">##A/B testing
-&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/beyond_z.png&quot; width=&quot;300&quot;&gt;
+&lt;img src=&quot;https://wiredferret.github.io/Toggle/img/ab_testing.jpg&quot; width=&quot;300&quot;&gt;
 
 A/B testing is traditionally a way to test out how audiences react to a small interface change by delivering the variant to half the users. Many organizations do this with full statistical significance and rigor, but others use it to confirm or deny theories about interface preferences without an experimental framework.
 
@@ -629,7 +634,9 @@ Here are some options for flag settings that can help you make your compliance t
 
 [[Private attributes]]
 [[Auditing]]
-[[RBAC]]</tw-passagedata><tw-passagedata pid="49" name="Private attributes" tags="Security" position="1653,893" size="100,100">##Private attributes
+[[RBAC]]
+
+[[Back to Adventure Choices|Adventure choices]] </tw-passagedata><tw-passagedata pid="49" name="Private attributes" tags="Security" position="1653,893" size="100,100">##Private attributes
 
 When you set an attribute as private, all of the values in the attribute will stay on your side, and you won&#39;t be sending anything &quot;across the wire&quot;. Instead, the targeting rules will evaluate the value at the endpoint.
 
